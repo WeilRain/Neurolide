@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+* {
+  margin: 0;
+}
+
+:-webkit-any(article, aside, nav, section) h1 {
+  font-size: 1.5em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+body {
+  font-family: Dm Sans !important;
+}
+
+.auth {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.auth .auth_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 215px;
+  margin-left: 244px;
+}
+
+.auth .auth_block .auth_block-header {
+  margin-bottom: 50px;
+}
+
+.auth .auth_block .auth_block-header h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.auth .auth_block .auth_block-header h5 {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #a3aed0;
+}
+
+.auth .auth_block .auth_block-select {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  margin-bottom: 30px;
+}
+
+.auth .auth_block .auth_block-select .btn_1 {
+  padding: 20px;
+  color: #fff;
+  width: 216px;
+  text-align: left;
+  border-radius: 20px;
+  background-color: #124897;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.auth .auth_block .auth_block-select .active {
+  background-color: #2e65f3;
+}
+
+.auth .auth_block .auth_block-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.auth .auth_block .auth_block-form .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth .auth_block .auth_block-form .form label {
+  font-size: 20px;
+}
+
+.auth .auth_block .auth_block-form .form input {
+  margin-top: 10px;
+  width: 380px;
+  padding: 20px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #a3aed0;
+}
+
+.auth .auth_block .auth_block-form .paswd_input {
+  margin: 30px 0;
+}
+
+.auth .auth_block .auth_block-form .paswd_input span {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 16px;
+  color: #2e65f3;
+}
+
+.auth .auth_block .auth_block-form .checkbox_input {
+  display: flex;
+  align-items: center;
+}
+
+.auth .auth_block .auth_block-form .checkbox_input label {
+  font-size: 20px;
+}
+
+.auth .auth_block .auth_block-form .checkbox_input .checkbox {
+  display: none;
+}
+
+.auth .auth_block .auth_block-form .checkbox_input .checkbox + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.auth .auth_block .auth_block-form .checkbox_input .checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #2e65f3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.auth .auth_block .auth_block-form .checkbox_input .checkbox + label::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.auth .auth_block .auth_block-form .checkbox_input .checkbox:checked + label::before {
+  background-color: #2e65f3;
+  border-color: #2e65f3;
+}
+
+.auth .auth_block .auth_block-form .checkbox_input .checkbox:checked + label::after {
+  opacity: 1;
+}
+
+.auth .auth_block .auth_block-submtit {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth .auth_block .auth_block-submtit .btn_submit {
+  background: linear-gradient(90deg, #70a9ff 0%, #316ec9 50%, #0149b4 100%);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px 50px 20px 50px;
+  border-radius: 20px;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.auth .auth_block .auth_block-submtit span {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #a3aed0;
+}
+
+.auth .auth_logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.auth .auth_logo .auth_backgorund {
+  background: url(../img/auth_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.auth .auth_logo .logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  margin-right: -270px;
+}
+
+.auth .auth_logo .logo h1 {
+  margin-top: 60px;
+  font-size: 100px;
+  font-weight: 400;
+  color: #fff;
+}
