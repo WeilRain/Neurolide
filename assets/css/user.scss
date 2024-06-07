@@ -1,0 +1,53 @@
+body {
+    height: 100vh;
+}
+
+.users {
+    .main_block {
+        .users_list-head {
+            display: flex;
+            justify-content: space-between;
+            margin: 32px 20px 38px 42px;
+            background: linear-gradient(180deg, #70a9ff 0%, #0149b4 100%, #316ec9 100%);
+            border-radius: 20px;
+            padding: 30px 20px;
+            .item {
+                display: flex;
+                align-items: center;
+                gap: 0 10px;
+                color: #fff;
+                & p {
+                    font-size: 20px;
+                }
+            }
+
+            .list-head_items {
+                display: flex;
+                gap: 0 45px;
+                .item {
+                    display: flex;
+                    align-items: center;
+                    gap: 0 10px;
+                    color: #fff;
+                    & p {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .list-head-other {
+                display: flex;
+                align-items: center;
+                gap: 0 95px;
+                .other_item {
+                    display: flex;
+                    align-items: center;
+                    gap: 0 10px;
+                    color: #fff;
+                    & p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
