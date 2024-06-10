@@ -1,0 +1,235 @@
+.balance {
+    .main_block {
+        .payment_method {
+            margin: 30px 0 0 180px;
+
+            .btn_method {
+                outline: none;
+                border: none;
+                border-radius: 20px;
+                background: rgba(241, 244, 255, 1);
+                padding: 15px 20px 15px 20px;
+                box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+            .payment_method-cards {
+                display: flex;
+                align-items: center;
+                gap: 0 30px;
+                .card {
+                    background: url(../img/card_backgroud.png);
+                    width: 382px;
+                    height: 218px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 20px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: top;
+                    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+
+                    .card_header {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 111px;
+                        margin-bottom: 60px;
+                        .card_balance {
+                            & p {
+                                color: #fff;
+                                font-size: 18px;
+                                & span {
+                                    opacity: 60%;
+                                }
+                            }
+                        }
+                    }
+                    .card_main {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 38px;
+                        margin-bottom: 24px;
+                        .card_number {
+                            font-size: 24px;
+                            gap: 0 6px;
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .card_date {
+                            color: #fff;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 4px 0;
+                            & span {
+                                font-size: 12px;
+                                opacity: 60%;
+                            }
+                            & p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .card_footer {
+                        display: flex;
+                        align-items: flex-start;
+                        color: #fff;
+                        gap: 0 200px;
+                        font-size: 14px;
+                    }
+                }
+                .add_card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background: rgba(241, 244, 255, 1);
+                    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+                    width: 218px;
+                    height: 218px;
+                    border-radius: 20px;
+                }
+            }
+        }
+        .private_balance {
+            margin-left: 180px;
+            .private_balance-btn {
+                display: flex;
+                align-items: center;
+                gap: 0 30px;
+                margin: 30px 0;
+                .btn_balance {
+                    background: rgba(241, 244, 255, 1);
+                    color: #000;
+                }
+                .btn_refill {
+                    color: #fff;
+                    background: linear-gradient(90deg, #70a9ff 0%, #316ec9 57%, #0149b4 100%);
+                }
+                .btn_withdraw {
+                    color: #fff;
+                    background: linear-gradient(90deg, #70a9ff 0%, #316ec9 57%, #0149b4 100%);
+                }
+                .btn_3 {
+                    outline: none;
+                    border: none;
+                    font-size: 20px;
+                    border-radius: 20px;
+                    padding: 15px 20px 15px 20px;
+                    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+                }
+            }
+            .card_balance {
+                width: 382px;
+                height: 218px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                border-radius: 20px;
+                background: rgba(241, 244, 255, 1);
+                box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+                & span {
+                    color: rgba(67, 67, 67, 1);
+                    font-size: 24px;
+                    margin-top: 28px;
+                    padding-left: 28px;
+                }
+
+                & p {
+                    font-size: 48px;
+                    margin-top: 66px;
+                    padding-left: 28px;
+                }
+            }
+        }
+        .history_payment {
+            margin-left: 180px;
+            margin: 50px 0 0 180px;
+            .history_payment-btn {
+                margin-bottom: 30px;
+                .btn_4 {
+                    background: rgba(241, 244, 255, 1);
+                    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+                    border-radius: 20px;
+                    border: none;
+                    padding: 15px 20px 15px 20px;
+                    outline: none;
+                    color: #000;
+                }
+            }
+            .history_payment-list {
+                border-radius: 20px;
+                background: rgba(241, 244, 255, 1);
+                box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+                .payment_list-head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 20px;
+                    & p {
+                        color: rgba(67, 67, 67, 1);
+                    }
+                    .list_other {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 105px;
+                    }
+                }
+                .two_items {
+                    display: flex;
+                    align-items: center;
+                    gap: 0 100px;
+                }
+                .payment_list-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 20px;
+
+                    .list_other {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 55px;
+                        .status_travel {
+                            border-radius: 20px;
+                            background: rgba(216, 225, 255, 1);
+                            color: rgba(46, 101, 243, 1);
+                            padding: 5px 20px 5px 20px;
+                            text-align: center;
+                        }
+                        .status_succes {
+                            border-radius: 20px;
+                            color: rgba(15, 175, 98, 1);
+                            background: rgba(221, 228, 186, 1);
+                            padding: 5px 20px 5px 20px;
+                            text-align: center;
+                        }
+                    }
+
+                    .two_items {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 60px;
+                    }
+                }
+            }
+        }
+    }
+    .user_background {
+        background: url(../img/profile_background.png);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        max-width: 950px;
+        z-index: -1;
+        max-height: 525px;
+        right: 0;
+    }
+}

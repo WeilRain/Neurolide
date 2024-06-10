@@ -5,10 +5,10 @@ body {
 .users .main_block .users_list-head {
   display: flex;
   justify-content: space-between;
-  margin: 32px 20px 38px 42px;
+  margin: 32px 0 38px 42px;
   background: linear-gradient(180deg, #70a9ff 0%, #0149b4 100%, #316ec9 100%);
   border-radius: 20px;
-  padding: 30px 20px;
+  padding: 30px 50px 30px 20px;
 }
 
 .users .main_block .users_list-head .item {
@@ -53,4 +53,47 @@ body {
 
 .users .main_block .users_list-head .list-head-other .other_item p {
   font-size: 20px;
+}
+
+.users .main_block .active {
+  background: linear-gradient(180deg, #6aa4fb 0%, #0b52bb 100%) !important;
+  color: #fff;
+}
+
+.users .main_block .user_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f4ff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  height: 56px;
+  margin: 8px;
+  border-radius: 20px;
+  margin-left: 42px;
+  padding: 0 20px;
+}
+
+.users .main_block .user_list .user_list-uid {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.users .main_block .user_list .user_list-other {
+  display: flex;
+  align-items: center;
+}
+
+.users .main_block .user_list .user_list-other .list-other-status {
+  display: flex;
+  align-items: center;
+  gap: 0 26px;
+}
+
+.users .main_block .user_list .user_list-other .list-other-transaction {
+  margin-right: 84px;
+}
+
+.users .main_block .user_list .user_list-other .list-other-balance {
+  margin-right: 162px;
 }

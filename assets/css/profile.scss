@@ -3,13 +3,8 @@
 }
 body {
 }
-// mangaer page
-.manager_view,
-.users,
-.media,
-.offering,
-.balance,
-.support {
+// profile page
+.profile_view {
     height: 100%;
     display: flex;
     .aside_nav {
@@ -97,13 +92,14 @@ body {
         .user_info {
             margin-top: 30px;
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-start;
             align-items: flex-start;
             gap: 0 140px;
 
             .user_info-avatar {
                 display: flex;
-                margin: 0 30px 0 60px;
+                flex-direction: column;
+                gap: 13px 0;
                 .user_btn {
                     display: flex;
                     gap: 0 10px;
@@ -141,6 +137,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 gap: 20px 0;
+                margin-left: 200px;
                 .list_item {
                     display: flex;
                     align-items: center;
@@ -182,18 +179,18 @@ body {
                 }
             }
         }
-        .offerings {
+        .channel {
             max-width: 1200px;
             margin: 0 auto;
             width: 100%;
-            .offerings_head {
+            .channel_head {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 width: 100%;
                 margin-top: 70px;
-                .offerings_aded {
-                    .offerings_aded {
+                .channel_aded {
+                    .channel_aded {
                         background: rgba(241, 244, 255, 1);
                         box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
                         outline: none;
@@ -206,11 +203,11 @@ body {
                         font-size: 28px;
                     }
                 }
-                .offerings_btn {
+                .channel_btn {
                     display: flex;
                     align-items: center;
                     gap: 0 20px;
-                    .offerings_add {
+                    .channel_add {
                         background: rgba(46, 101, 243, 1);
                         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
                         outline: none;
@@ -222,7 +219,7 @@ body {
                         text-align: center;
                         font-size: 16px;
                     }
-                    .offerings_search {
+                    .channel_search {
                         display: flex;
                         align-items: center;
                         justify-content: start;
@@ -239,18 +236,24 @@ body {
                     }
                 }
             }
-            .offerings_list {
+            .channel_list {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 margin-top: 35px;
-                .offerings_list-head {
+                .channel_list-head {
                     display: flex;
                     justify-content: space-between;
 
                     background: linear-gradient(180deg, #70a9ff 0%, #0149b4 100%, #316ec9 100%);
                     border-radius: 20px;
-                    padding: 30px 20px;
+                    padding: 30px 100px 30px 20px;
+                    .list-head-items {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 50px;
+                        margin-right: 120px;
+                    }
                     .item {
                         display: flex;
                         align-items: center;
@@ -276,7 +279,7 @@ body {
                     .list-head-other {
                         display: flex;
                         align-items: center;
-                        gap: 0 20px;
+                        gap: 0 50px;
                         .other_item {
                             display: flex;
                             align-items: center;
@@ -288,60 +291,44 @@ body {
                         }
                     }
                 }
-                .offerings_list-item {
+                .active {
+                    background: linear-gradient(180deg, #6da6fd 0%, #084fb9 100%) !important;
+                    color: #fff;
+                }
+                .channel_list-item {
+                    display: flex;
+                    align-items: center;
                     background: rgba(241, 244, 255, 1);
                     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
                     border-radius: 20px;
                     margin: 8px 0;
+                    justify-content: space-between;
                     height: 56px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    gap: 0 40px;
-                    padding: 0 54px 0 25px;
-                    & p {
-                        font-size: 20px;
-                    }
-                    .item_other {
+                    padding: 0 34px 0 16px;
+                    .list-head-other {
                         display: flex;
                         align-items: center;
-                        gap: 0 25px;
-                        .item_other-select {
-                            display: flex;
-                            color: #fff;
-                            flex-direction: column;
-                            align-items: center;
-                            background: rgba(71, 119, 242, 1);
-                            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
-                            border-radius: 20px;
-                            padding: 10px 12px 10px 12px;
+                        gap: 0 95px;
+                        margin-right: 90px;
+                        .link {
                             & p {
-                                font-size: 16px;
+                                font-size: 20px !important;
                             }
                         }
+                        & p {
+                            font-size: 16px;
+                        }
                     }
-                    .item_setting {
+
+                    .two_items {
                         display: flex;
-                        gap: 0 30px;
-                        .btn_setting {
-                            outline: none;
-                            border: none;
-                            background: transparent;
+                        align-items: center;
+                        gap: 0 45px;
+                        & span {
+                            font-size: 10px;
                         }
-                        .btn_delete {
-                            outline: none;
-                            border: none;
-                            background: transparent;
-                        }
-                    }
-                }
-                .active {
-                    background: linear-gradient(180deg, #70a9ff 0%, #0149b4 100%, #316ec9 100%);
-                    color: #fff;
-                    .item_other {
-                        .item_other-select {
-                            background: rgba(255, 255, 255, 1);
-                            color: rgba(67, 67, 67, 1);
+                        & p {
+                            font-size: 16px;
                         }
                     }
                 }
@@ -350,7 +337,7 @@ body {
     }
 
     .user_background {
-        background: url(../img/user_background.png);
+        background: url(../img/profile_background.png);
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
@@ -360,7 +347,7 @@ body {
         top: 0;
         max-width: 950px;
         z-index: -1;
-        max-height: 455px;
+        max-height: 525px;
         right: 0;
     }
 }
