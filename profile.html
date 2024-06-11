@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/profile.css">
     <title>Neurolide | Профіль</title>
 </head>
@@ -37,7 +37,8 @@
                 </a>
                 <a href="support.html">
                     <li class="list_item"><img src="assets/img/support.png" alt=""> Технічна підтримка</li>
-                </a>            </div>
+                </a>
+            </div>
         </aside>
         <div class="main_block">
             <div class="header_nav">
@@ -109,7 +110,7 @@
                     <div class="channel_btn">
 
                         <button class="channel_search"><img src="assets/img/search_icon.png" alt="search">
-                            Пошук</button><button class="channel_add">
+                            Пошук</button><button class="channel_add" onclick="openModal()">
                             Додати канал
                         </button>
                     </div>
@@ -314,7 +315,78 @@
         <div class="user_background">
 
         </div>
+        <!-- modal box -->
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+
+                <h4>
+                    Додати новий канал </h4>
+                <div class="modal_form">
+                    <div class="modal_form-item input">
+                        <label for="name">Назва</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="modal_form-item input">
+                        <label for="link">Посилання</label>
+                        <input type="text" id="link">
+                    </div>
+                    <div class="modal_form-item input">
+                        <label for="sub">Підписники</label>
+                        <input type="text" id="sub">
+                    </div>
+                    <div class="modal_form-item input">
+                        <label for="ctr">CTR</label>
+                        <input type="text" id="ctr">
+                    </div>
+                    <div class="modal_form-item input">
+                        <label for="amount">Ціна</label>
+                        <input type="text" id="amount">
+                    </div>
+
+
+                </div>
+                <div class="modal_payment profile_modal">
+                    <p>Модель опалти</p>
+                    <div class="payment_list-profile">
+                        <div class="dropdown">
+                            <div class="dropdown-selected">
+                                <span class="dropdown-text">CPH</span>
+
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item">$</div>
+                                <span class="dropdown-arrow">^</span>
+                            </div>
+
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="dropdown-selected">
+                                <span class="dropdown-text">CPM</span>
+
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item">$</div>
+                                <span class="dropdown-arrow">^</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal_payment-btn">
+                        <button class="btn_cancel btn_5">
+                            Відмінити
+                        </button>
+                        <button class="btn_add btn_5">+ Додати канал</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
+    <!-- script -->
+    <script src="assets/js/modal.js"></script>
 </body>
 
 </html>

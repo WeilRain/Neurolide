@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/managerpage.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <title>Neurolide | Сторінка Менеджера</title>
 </head>
 
@@ -183,7 +184,8 @@
                             </div>
                         </div>
                         <div class="item_setting">
-                            <button class="btn_setting"><img src="assets/img/setting_icon.png" alt=""></button>
+                            <button class="btn_setting" onclick="openModal()"><img src="assets/img/setting_icon.png"
+                                    alt=""></button>
                             <button class="btn_delete"><img src="assets/img/delete_icon.png" alt=""></button>
                         </div>
                     </div>
@@ -215,7 +217,8 @@
                             </div>
                         </div>
                         <div class="item_setting">
-                            <button class="btn_setting"><img src="assets/img/setting_icon.png" alt=""></button>
+                            <button class="btn_setting" onclick="openModal()"><img src="assets/img/setting_icon.png"
+                                    alt=""></button>
                             <button class="btn_delete"><img src="assets/img/delete_icon.png" alt=""></button>
                         </div>
                     </div>
@@ -247,7 +250,8 @@
                             </div>
                         </div>
                         <div class="item_setting">
-                            <button class="btn_setting"><img src="assets/img/setting_icon.png" alt=""></button>
+                            <button class="btn_setting" onclick="openModal()"><img src="assets/img/setting_icon.png"
+                                    alt=""></button>
                             <button class="btn_delete"><img src="assets/img/delete_icon.png" alt=""></button>
                         </div>
                     </div>
@@ -279,7 +283,8 @@
                             </div>
                         </div>
                         <div class="item_setting">
-                            <button class="btn_setting"><img src="assets/img/setting_icon.png" alt=""></button>
+                            <button class="btn_setting" onclick="openModal()"><img src="assets/img/setting_icon.png"
+                                    alt=""></button>
                             <button class="btn_delete"><img src="assets/img/delete_icon.png" alt=""></button>
                         </div>
                     </div>
@@ -311,7 +316,8 @@
                             </div>
                         </div>
                         <div class="item_setting">
-                            <button class="btn_setting "><img src="assets/img/setting_icon.png" alt=""></button>
+                            <button class="btn_setting " onclick="openModal()"><img src="assets/img/setting_icon.png"
+                                    alt=""></button>
                             <button class="btn_delete "><img src="assets/img/delete_icon.png" alt=""></button>
                         </div>
                     </div>
@@ -323,6 +329,106 @@
 
         </div>
     </section>
+    <!-- modal_box -->
+     
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+
+            <h4>
+                Редагувати офер </h4>
+            <div class="modal_form">
+                <div class="modal_form-item input">
+                    <label for="name">Назва</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="modal_form-item input">
+                    <label for="link">Посилання</label>
+                    <input type="text" id="link">
+                </div>
+                <div class="modal_form-item input">
+                    <label for="brand">Бренд</label>
+                    <input type="text" id="brand">
+                </div>
+                <div class="modal_form-item input">
+                    <label for="payments">Виплати</label>
+                    <input type="text" id="payments">
+                </div>
+                <div class="modal_form-item input">
+                    <label for="balance">Баланс</label>
+                    <input type="text" id="balance">
+                </div>
+                <div class="modal_payment">
+                    <p>Модель опалти</p>
+                    <div class="payment_list">
+                        <div class="dropdown">
+                            <div class="dropdown-selected">
+                                <span class="dropdown-text">RevShare</span>
+
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item">%$</div>
+                                <span class="dropdown-arrow">^</span>
+                            </div>
+
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-selected">
+                                <span class="dropdown-text">CPL</span>
+
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item">$</div>
+                                <span class="dropdown-arrow">^</span>
+                            </div>
+
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-selected">
+                                <span class="dropdown-text">CPC</span>
+
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item">$</div>
+                                <span class="dropdown-arrow">^</span>
+                            </div>
+
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-selected">
+                                <span class="dropdown-text">CPM</span>
+
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item">$</div>
+                                <span class="dropdown-arrow">^</span>
+                            </div>
+
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-selected">
+                                <span class="dropdown-text">CPH</span>
+
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item">$</div>
+                                <span class="dropdown-arrow">^</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal_payment-btn">
+                        <button class="btn_cancel btn_5">
+                            Відмінити
+                        </button>
+                        <button class="btn_add btn_5">+ Додати офер</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+
+    <script src="assets/js/modal.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/managerpage.css">
     <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <title>Neurolide | Користувачі</title>
 </head>
 
@@ -114,7 +115,8 @@
                         <p>
                             Бренд
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png"
+                            onclick="openModal()" alt="">
                     </div>
 
                 </div>
@@ -141,7 +143,8 @@
                         <p>
                             Бренд
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png"
+                            onclick="openModal()" alt="">
                     </div>
 
                 </div>
@@ -168,7 +171,8 @@
                         <p>
                             Бренд
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png"
+                            onclick="openModal()" alt="">
                     </div>
 
                 </div>
@@ -195,7 +199,8 @@
                         <p>
                             Бренд
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png"
+                            onclick="openModal()" alt="">
                     </div>
 
                 </div>
@@ -222,7 +227,8 @@
                         <p>
                             Бренд
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png"
+                            onclick="openModal()" alt="">
                     </div>
 
                 </div>
@@ -249,7 +255,8 @@
                         <p>
                             Бренд
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png"
+                            onclick="openModal()" alt="">
                     </div>
 
                 </div>
@@ -276,7 +283,8 @@
                         <p>
                             Бренд
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png"
+                            onclick="openModal()" alt="">
                     </div>
 
                 </div>
@@ -303,7 +311,8 @@
                         <p>
                             Бренд
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png"
+                            onclick="openModal()" alt="">
                     </div>
 
                 </div>
@@ -330,7 +339,8 @@
                         <p>
                             Аффіліат
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png"
+                            onclick="openModal()" alt="">
                     </div>
 
                 </div>
@@ -357,7 +367,8 @@
                         <p>
                             Аффіліат
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png"
+                            onclick="openModal()" alt="">
                     </div>
 
                 </div>
@@ -384,7 +395,8 @@
                         <p>
                             Аффіліат
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png"
+                            onclick="openModal()" alt="">
                     </div>
 
                 </div>
@@ -438,7 +450,8 @@
                         <p>
                             Аффіліат
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png"
+                            onclick="openModal()" alt="">
                     </div>
 
                 </div>
@@ -465,13 +478,53 @@
                         <p>
                             Аффіліат
                         </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/setting_icon.png" alt="">
+                        <img src="assets/img/circledelet_icon.png" alt=""><img onclick="openModal()"
+                            src="assets/img/setting_icon.png" alt="">
                     </div>
 
+                </div>
+
+            </div>
+
+        </div>
+        <!-- modal box -->
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+
+                <h4>
+                    Редагувати данні користувача </h4>
+                <div class="modal_form">
+                    <div class="modal_form-item input">
+                        <label for="name">Нікнейм</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="modal_form-item input">
+                        <label for="email">Пошта</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="modal_form-item input">
+                        <label for="balance">Баланс</label>
+                        <input type="text" id="balance">
+                    </div>
+                    <div class="modal_form-item input">
+                        <label for="payments">Транзакції</label>
+                        <input type="text" id="payments">
+                    </div>
+
+
+                </div>
+                <div class="modal_users-btn">
+                    <button class="btn_cancel btn_5">
+                        Відмінити
+                    </button>
+                    <button class="btn_add btn_5">+ Додати офер</button>
                 </div>
             </div>
         </div>
     </section>
+    <!-- script -->
+    <script src="assets/js/modal.js"></script>
 </body>
 
 </html>

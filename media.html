@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/managerpage.css">
     <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+
     <title>Neurolide | Медіа канали</title>
 </head>
 
@@ -68,8 +70,8 @@
                 <div class="media_btn">
 
                     <button class="media_search"><img src="assets/img/search_icon.png" alt="search">
-                        Пошук</button><button class="media_add">
-                        Додати офер
+                        Пошук</button><button class="media_add" onclick="openModal()">
+                        Додати канал
                     </button>
                 </div>
             </div>
@@ -371,7 +373,7 @@
                         <div class="other_item select">
                             <p>СРМ</p>
                             <img src="assets/img/arrowdown_icon.png" alt="">
-
+                            
                         </div>
                         <div class="other_item">
                             <p>32 700 ₴</p>
@@ -539,7 +541,44 @@
                 </div>
             </div>
         </div>
+        <!-- modal box -->
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+
+                <h4>
+                    Додати новий канал </h4>
+                <div class="modal_form">
+                    <div class="modal_form-item input">
+                        <label for="name">Назва</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="modal_form-item input">
+                        <label for="sub">Підписники</label>
+                        <input type="text" id="sub">
+                    </div>
+                    <div class="modal_form-item input">
+                        <label for="views">Перегляди</label>
+                        <input type="text" id="views">
+                    </div>
+                    <div class="modal_form-item input">
+                        <label for="amount">Ціна</label>
+                        <input type="text" id="amount">
+                    </div>
+
+
+                </div>
+                <div class="modal_users-btn">
+                    <button class="btn_cancel btn_5">
+                        Відмінити
+                    </button>
+                    <button class="btn_add btn_5">+ Додати канал</button>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- script -->
+    <script src="assets/js/modal.js"></script>
 </body>
 
 </html>

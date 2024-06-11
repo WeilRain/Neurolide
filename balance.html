@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/managerpage.css">
     <link rel="stylesheet" href="assets/css/balance.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <title>Neurolide | Баланс</title>
 </head>
 
@@ -114,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="add_card">
+                    <div class="add_card" onclick="openModal()">
                         <img src="assets/img/add_icon.png" alt="">
                         <p>Додати нову картку</p>
                     </div>
@@ -229,7 +230,47 @@
         <div class="user_background">
 
         </div>
+        <!-- modal box -->
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+
+                <h4>
+                    Редагувати данні користувача </h4>
+                <div class="modal_form">
+                    <div class="modal_form-item input">
+                        <label for="cardName">Додати нову карту</label>
+                        <input type="text" id="cardName" placeholder="Номер карти">
+                    </div>
+                    <div class="modal_form-item input">
+                        <label for="fio">Ініціали, вказані на карті</label>
+                        <input type="text" id="fio" placeholder="Ім’я та прізвище">
+                    </div>
+                    <div class="modal_form-item__two">
+                        <div class="modal_form-item input">
+                            <label for="cvc">CVC</label>
+                            <input type="password" id="cvc" placeholder="****">
+                        </div>
+                        <div class="modal_form-item input">
+                            <label for="date">Дата завершення</label>
+                            <input type="text" id="date" placeholder="MM / YY">
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="modal_users-btn">
+                    <button class="btn_cancel btn_5">
+                        Відмінити
+                    </button>
+                    <button class="btn_add btn_5">+ Додати карту</button>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- script -->
+    <script src="assets/js/modal.js"></script>
 </body>
 
 </html>
