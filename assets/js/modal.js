@@ -19,6 +19,50 @@ window.onclick = function (event) {
     closeModal();
   }
 };
+
+var modalBalance = document.getElementById("modalBalance");
+
+function openModalBalance() {
+  modalBalance.classList.add("show");
+  setTimeout(function () {
+    modalBalance.querySelector(".modal-content_balance").classList.add("show");
+  }, 10);
+}
+
+function closeModalBalance() {
+  modalBalance.querySelector(".modal-content_balance").classList.remove("show");
+  setTimeout(function () {
+    modalBalance.classList.remove("show");
+  }, 500);
+}
+
+window.onclick = function (event) {
+  if (event.target == modalBalance) {
+    closeModalBalance();
+  }
+};
+
+var modaleBalanceAdd = document.getElementById("add_balance");
+
+function openAddBalance() {
+  modaleBalanceAdd.classList.add("show");
+  setTimeout(function () {
+    modaleBalanceAdd.querySelector(".modal_balance-add").classList.add("show");
+  }, 10);
+}
+
+function closeAddBalance() {
+  modaleBalanceAdd.querySelector(".modal_balance-add").classList.remove("show");
+  setTimeout(function () {
+    modaleBalanceAdd.classList.remove("show");
+  }, 500);
+}
+
+window.onclick = function (event) {
+  if (event.target == modaleBalanceAdd) {
+    closeAddBalance();
+  }
+};
 document.addEventListener("DOMContentLoaded", function () {
   var dropdowns = document.querySelectorAll(".dropdown");
 

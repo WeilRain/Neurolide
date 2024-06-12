@@ -15,7 +15,10 @@
         display: block;
         opacity: 1;
     }
-
+    .showbalance {
+        display: block;
+        opacity: 1;
+    }
     .modal-content {
         background: rgba(241, 244, 255, 1);
         margin: 5% auto;
@@ -61,9 +64,11 @@
             }
         }
 
-        &.show {
+        &.show,
+        .showbalance {
             transform: translateY(0);
         }
+
         .modal_users-btn {
             margin-top: -20px;
             justify-content: space-between;
@@ -189,6 +194,16 @@
     border-radius: 0 0 20px 20px;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
     z-index: 1;
+    .border_item {
+        padding: 5px !important;
+        & input {
+            border: 1px solid rgba(173, 182, 214, 1);
+            border-radius: 5px;
+            outline: none;
+            width: 40px;
+            height: 25px;
+        }
+    }
 }
 
 .dropdown-content .dropdown-item {
