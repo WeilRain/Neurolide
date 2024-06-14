@@ -10,6 +10,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: opacity 0.5s ease;
+  color: #fff;
 }
 
 .modal.show {
@@ -23,7 +24,7 @@
 }
 
 .modal .modal-content {
-  background: #f1f4ff;
+  background: #0e1218;
   margin: 5% auto;
   max-width: 468px;
   border-radius: 20px;
@@ -53,7 +54,7 @@
   margin-top: 10px;
   max-width: 369px;
   outline: none;
-  border: 1px solid #a3aed0;
+  border: 1px solid #71788c;
   padding: 10px 20px 10px 20px;
   background: transparent;
   border-radius: 20px;
@@ -96,11 +97,11 @@
 }
 
 .modal .modal-content .modal_users-btn .btn_cancel {
-  background: #a3aed0;
+  background: #181a1e;
 }
 
 .modal .modal-content .modal_users-btn .btn_add {
-  background: linear-gradient(90deg, #70a9ff 0%, #316ec9 57%, #0149b4 100%);
+  background: #3334ff;
 }
 
 .modal .modal-content .profile_modal {
@@ -132,7 +133,7 @@
 
 .modal_payment .show .dropdown-selected {
   border-radius: 20px 20px 0 0;
-  background-color: #fff;
+  background: #181a1e;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -163,11 +164,11 @@
 }
 
 .modal_payment .modal_payment-btn .btn_cancel {
-  background: #a3aed0;
+  background: #181a1e;
 }
 
 .modal_payment .modal_payment-btn .btn_add {
-  background: linear-gradient(90deg, #70a9ff 0%, #316ec9 57%, #0149b4 100%);
+  background: #3334ff;
 }
 
 .dropdown {
@@ -176,7 +177,7 @@
 }
 
 .dropdown-selected {
-  background: #f1f4ff;
+  background: #181a1e;
   border-radius: 20px;
   padding: 10px 12px;
   cursor: pointer;
@@ -203,7 +204,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #fff;
+  background: #0e1218;
   max-width: 96px;
   width: 100%;
   border-radius: 0 0 20px 20px;
@@ -216,7 +217,7 @@
 }
 
 .dropdown-content .border_item input {
-  border: 1px solid #adb6d6;
+  border: 1px solid #71788c;
   border-radius: 5px;
   outline: none;
   width: 40px;
@@ -243,12 +244,12 @@
 }
 
 .cancel-btn {
-  background-color: #9b9b9b;
+  background: #181a1e;
   color: white;
 }
 
 .add-btn {
-  background-color: #007bff;
+  background: #3334ff;
   color: white;
   margin-left: 10px;
 }

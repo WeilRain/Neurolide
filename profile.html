@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/managerpage.css">
     <link rel="stylesheet" href="assets/css/profile.css">
     <title>Neurolide | Профіль</title>
 </head>
@@ -18,7 +19,7 @@
             </div>
             <div class="aside_nav-lsit">
                 <a href="manager.html">
-                    <li class="list_item"><img src="assets/img/manager_icon.png" alt=""> Менеджер</li>
+                    <li class="list_item "><img src="assets/img/manager_icon.png" alt=""> Менеджер</li>
                 </a>
                 <a href="users.html">
                     <li class="list_item "><img src="assets/img/users_icon.png" alt=""> Користувачі</li>
@@ -59,257 +60,273 @@
                     <p>212</p>
                 </div>
             </div>
-            <div class="user_info">
-                <div class="user_info-list">
-                    <div class="list_item">
-                        <p>Admin id:</p>
-                        <span>110A</span>
-                    </div>
-                    <div class="list_item">
-                        <p>Ім’я:</p>
-                        <span>Adela Parkson</span>
-                    </div>
-                    <div class="list_item">
-                        <p>Адреса:</p>
-                        <span>Khumaltar, Lalitpur</span>
-                    </div>
-                    <div class="list_item">
-                        <p>Номер:</p>
-                        <span>9841236978</span>
-                    </div>
-                    <div class="list_item">
-                        <p>Email:</p>
-                        <span>Adela98@gmail.com</span>
-                    </div>
-                    <div class="list_item">
-                        <p>Пароль:</p>
-                        <span>*******</span>
-                    </div>
-                    <div class="change_btn">
-                        <button class="btn_edit">Редагувати особисти дані</button>
-                        <button class="btn_save">Зберегти
-                            зміни</button>
-                    </div>
-                </div>
-                <div class="user_info-avatar">
 
-                    <img src="assets/img/Avatar.png" alt="">
-
+            <div class="user">
+                <div class="user_info">
+                    <div class="user_info-list">
+                        <div class="list_item">
+                            <p>Name:</p> <span>Mariia</span>
+                        </div>
+                        <div class="list_item">
+                            <p>Surname:</p> <span>Skorobohata</span>
+                        </div>
+                        <div class="list_item">
+                            <p>Tel num:</p> <span>+380 123 45 67</span>
+                        </div>
+                        <div class="list_item">
+                            <p>Email:</p> <span>mariia123@email.com</span>
+                        </div>
+                        <div class="list_item">
+                            <p>Password:</p> <span>*******</span>
+                        </div>
+                    </div>
+                    <img class="user_avatar" src="assets/img/Avatar.png" alt="">
                     <div class="user_btn">
-                        <button class="btn_exit">Вихід</button><button class="btn_delete">Видалити профіль</button>
+                        <button class="btn_1">Редагувати</button><button class="btn_1">Видалити</button><button
+                            class="btn_1">Вихід</button>
+                    </div>
+                </div>
+                <div class="user_static">
+                    <div class="list_static">
+                        <p>601,78</p>
+                    </div>
+                    <div class="list_static">
+                        <p>3002,49</p>
+                    </div>
+                    <div class="list_static">
+                        <p>216</p>
+                    </div>
+                    <div class="list_static">
+                        <p>212</p>
                     </div>
                 </div>
             </div>
-            <div class="channel">
-                <div class="channel_head">
-                    <div class="channel_aded">
-                        <button class="channel_aded">
-                            Додані канали
-                        </button>
+            <div class="users_list">
+                <div class="users_list-head">
+                    <div class="two_item">
+                        <div class="list-head-uuid item">
+                            <p>UID</p>
+                            <img src="assets/img/arrowdown_icon.png" alt="">
+                        </div>
+                        <div class="list-head-name item">
+                            <p>Нікнейм</p>
+                            <img src="assets/img/arrowdown_icon.png" alt="">
+                        </div>
                     </div>
-                    <div class="channel_btn">
 
-                        <button class="channel_search"><img src="assets/img/search_icon.png" alt="search">
-                            Пошук</button><button class="channel_add" onclick="openModal()">
-                            Додати канал
-                        </button>
+
+                    <div class="list-head_email item">
+                        <p>Пошта</p>
+                        <img src="assets/img/arrowdown_icon.png" alt="">
+                    </div>
+
+                    <div class="list-head-other">
+                        <div class="other_item">
+                            <p>Баланс</p>
+                            <img src="assets/img/arrowdown_icon.png" alt="">
+                        </div>
+                        <div class="other_item">
+                            <p>Транзакції</p>
+                            <img src="assets/img/arrowdown_icon.png" alt="">
+                        </div>
+
+                        <div class="other_item">
+                            <p>Статус</p>
+                            <img src="assets/img/arrowdown_icon.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="channel_list">
-                    <div class="channel_list-head">
-                        <div class="list-head-items">
-                            <div class="list-head-uuid item">
-                                <p>UID</p>
-                                <img src="assets/img/arrowdown_icon.png" alt="">
+                <div class="list">
+                    <div class="list_item ">
+                        <div class="two_item">
+                            <div class="list_item-uid">
+                                <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
                             </div>
-                            <div class="list-head-name item">
-                                <p>Нікнейм</p>
-                                <img src="assets/img/arrowdown_icon.png" alt="">
-                            </div>
+                            <div class="list_item-name">
 
-                        </div>
-
-
-
-                        <div class="list-head-other">
-                            <div class="other_item">
-                                <p>Посилання</p>
-                                <img src="assets/img/arrowdown_icon.png" alt="">
-
-                            </div>
-                            <div class="other_item">
-                                <p>Підписники</p>
-                                <img src="assets/img/arrowdown_icon.png" alt="">
-                            </div>
-                            <div class="other_item">
-                                <p>CTR</p>
-                                <img src="assets/img/arrowdown_icon.png" alt="">
-                            </div>
-                            <div class="other_item">
-                                <p>Ціна</p>
-                                <img src="assets/img/arrowdown_icon.png" alt="">
-                            </div>
-                            <div class="other_item">
-                                <p>Статус</p>
-                                <img src="assets/img/arrowdown_icon.png" alt="">
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="channel_list-item active">
-                        <div class="two_items">
-                            <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
-                            <div class="name">
                                 <p>Кріейтори</p>
                                 <span>Ком’юніті українських АІ-крінйторів</span>
+
                             </div>
                         </div>
 
-                        <div class="list-head-other">
-                            <div class="other_item link">
-                                <p>wordwall.net</p>
+                        <div class="list_item-email">
+                            <p>wordwall.net</p>
+                        </div>
+                        <div class="list_item-other">
+                            <div class="list-other-balance">
+                                <p>$122</p>
                             </div>
-                            <div class="other_item">
-                                <p>20 989</p>
+                            <div class="list-other-transaction">
+                                <p>$1489</p>
                             </div>
-                            <div class="other_item">
-                                <p>9 897</p>
+                            <div class="list-other-status">
+
+                                <img src="assets/img/whitedelete.png" alt=""><img src="assets/img/whitesetting.png"
+                                    onclick="openModal()" alt="">
                             </div>
 
-                            <div class="other_item">
-                                <p>32 700 ₴</p>
-
-                            </div>
-
-                            <div class="other_item">
-                                <img src="assets/img/delete_icon.png" alt="">
-                            </div>
                         </div>
                     </div>
-                    <div class="channel_list-item">
-                        <div class="two_items">
-                            <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
-                            <div class="name">
+                    <div class="list_item ">
+                        <div class="two_item">
+                            <div class="list_item-uid">
+                                <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
+                            </div>
+                            <div class="list_item-name">
+
                                 <p>Кріейтори</p>
                                 <span>Ком’юніті українських АІ-крінйторів</span>
+
                             </div>
                         </div>
 
-                        <div class="list-head-other">
-                            <div class="other_item link">
-                                <p>wordwall.net</p>
+                        <div class="list_item-email">
+                            <p>wordwall.net</p>
+                        </div>
+                        <div class="list_item-other">
+                            <div class="list-other-balance">
+                                <p>$122</p>
                             </div>
-                            <div class="other_item">
-                                <p>20 989</p>
+                            <div class="list-other-transaction">
+                                <p>$1489</p>
                             </div>
-                            <div class="other_item">
-                                <p>9 897</p>
+                            <div class="list-other-status">
+
+                                <img src="assets/img/whitedelete.png" alt=""><img src="assets/img/whitesetting.png"
+                                    onclick="openModal()" alt="">
                             </div>
 
-                            <div class="other_item">
-                                <p>32 700 ₴</p>
-
-                            </div>
-
-                            <div class="other_item">
-                                <img src="assets/img/delete_icon.png" alt="">
-                            </div>
                         </div>
                     </div>
-                    <div class="channel_list-item">
-                        <div class="two_items">
-                            <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
-                            <div class="name">
+                    <div class="list_item ">
+                        <div class="two_item">
+                            <div class="list_item-uid">
+                                <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
+                            </div>
+                            <div class="list_item-name">
+
                                 <p>Кріейтори</p>
                                 <span>Ком’юніті українських АІ-крінйторів</span>
+
                             </div>
                         </div>
 
-                        <div class="list-head-other">
-                            <div class="other_item link">
-                                <p>wordwall.net</p>
+                        <div class="list_item-email">
+                            <p>wordwall.net</p>
+                        </div>
+                        <div class="list_item-other">
+                            <div class="list-other-balance">
+                                <p>$122</p>
                             </div>
-                            <div class="other_item">
-                                <p>20 989</p>
+                            <div class="list-other-transaction">
+                                <p>$1489</p>
                             </div>
-                            <div class="other_item">
-                                <p>9 897</p>
+                            <div class="list-other-status">
+
+                                <img src="assets/img/whitedelete.png" alt=""><img src="assets/img/whitesetting.png"
+                                    onclick="openModal()" alt="">
                             </div>
 
-                            <div class="other_item">
-                                <p>32 700 ₴</p>
-
-                            </div>
-
-                            <div class="other_item">
-                                <img src="assets/img/delete_icon.png" alt="">
-                            </div>
                         </div>
                     </div>
-                    <div class="channel_list-item">
-                        <div class="two_items">
-                            <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
-                            <div class="name">
+                    <div class="list_item ">
+                        <div class="two_item">
+                            <div class="list_item-uid">
+                                <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
+                            </div>
+                            <div class="list_item-name">
+
                                 <p>Кріейтори</p>
                                 <span>Ком’юніті українських АІ-крінйторів</span>
+
                             </div>
                         </div>
 
-                        <div class="list-head-other">
-                            <div class="other_item link">
-                                <p>wordwall.net</p>
+                        <div class="list_item-email">
+                            <p>wordwall.net</p>
+                        </div>
+                        <div class="list_item-other">
+                            <div class="list-other-balance">
+                                <p>$122</p>
                             </div>
-                            <div class="other_item">
-                                <p>20 989</p>
+                            <div class="list-other-transaction">
+                                <p>$1489</p>
                             </div>
-                            <div class="other_item">
-                                <p>9 897</p>
+                            <div class="list-other-status">
+
+                                <img src="assets/img/whitedelete.png" alt=""><img src="assets/img/whitesetting.png"
+                                    onclick="openModal()" alt="">
                             </div>
 
-                            <div class="other_item">
-                                <p>32 700 ₴</p>
-
-                            </div>
-
-                            <div class="other_item">
-                                <img src="assets/img/delete_icon.png" alt="">
-                            </div>
                         </div>
                     </div>
-                    <div class="channel_list-item">
-                        <div class="two_items">
-                            <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
-                            <div class="name">
+                    <div class="list_item ">
+                        <div class="two_item">
+                            <div class="list_item-uid">
+                                <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
+                            </div>
+                            <div class="list_item-name">
+
                                 <p>Кріейтори</p>
                                 <span>Ком’юніті українських АІ-крінйторів</span>
+
                             </div>
                         </div>
 
-                        <div class="list-head-other">
-                            <div class="other_item link">
-                                <p>wordwall.net</p>
+                        <div class="list_item-email">
+                            <p>wordwall.net</p>
+                        </div>
+                        <div class="list_item-other">
+                            <div class="list-other-balance">
+                                <p>$122</p>
                             </div>
-                            <div class="other_item">
-                                <p>20 989</p>
+                            <div class="list-other-transaction">
+                                <p>$1489</p>
                             </div>
-                            <div class="other_item">
-                                <p>9 897</p>
+                            <div class="list-other-status">
+
+                                <img src="assets/img/whitedelete.png" alt=""><img src="assets/img/whitesetting.png"
+                                    onclick="openModal()" alt="">
                             </div>
 
-                            <div class="other_item">
-                                <p>32 700 ₴</p>
-
-                            </div>
-
-                            <div class="other_item">
-                                <img src="assets/img/delete_icon.png" alt="">
-                            </div>
                         </div>
                     </div>
+                    <div class="list_item ">
+                        <div class="two_item">
+                            <div class="list_item-uid">
+                                <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
+                            </div>
+                            <div class="list_item-name">
 
+                                <p>Кріейтори</p>
+                                <span>Ком’юніті українських АІ-крінйторів</span>
+
+                            </div>
+                        </div>
+
+                        <div class="list_item-email">
+                            <p>wordwall.net</p>
+                        </div>
+                        <div class="list_item-other">
+                            <div class="list-other-balance">
+                                <p>$122</p>
+                            </div>
+                            <div class="list-other-transaction">
+                                <p>$1489</p>
+                            </div>
+                            <div class="list-other-status">
+
+                                <img src="assets/img/whitedelete.png" alt=""><img src="assets/img/whitesetting.png"
+                                    onclick="openModal()" alt="">
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         </div>
 
         <div class="user_background">

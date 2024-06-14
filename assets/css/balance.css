@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Public Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+  font-style: normal;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
 .balance .main_block .payment_method {
   margin: 30px 0 0 180px;
 }
@@ -6,11 +22,13 @@
   outline: none;
   border: none;
   border-radius: 20px;
-  background: #f1f4ff;
+  background: #0e1218;
   padding: 15px 20px 15px 20px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-size: 20px;
   margin-bottom: 30px;
+  font-family: "Public Sans", sans-serif;
+  color: #fff;
 }
 
 .balance .main_block .payment_method .payment_method-cards {
@@ -94,10 +112,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #f1f4ff;
+  background: #181a1e;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
   width: 218px;
   height: 218px;
+  color: #fff;
   border-radius: 20px;
 }
 
@@ -113,18 +132,18 @@
 }
 
 .balance .main_block .private_balance .private_balance-btn .btn_balance {
-  background: #f1f4ff;
-  color: #000;
+  background: #0e1218;
+  color: #ffff;
 }
 
 .balance .main_block .private_balance .private_balance-btn .btn_refill {
   color: #fff;
-  background: linear-gradient(90deg, #70a9ff 0%, #316ec9 57%, #0149b4 100%);
+  background: #423efc;
 }
 
 .balance .main_block .private_balance .private_balance-btn .btn_withdraw {
   color: #fff;
-  background: linear-gradient(90deg, #70a9ff 0%, #316ec9 57%, #0149b4 100%);
+  background: #423efc;
 }
 
 .balance .main_block .private_balance .private_balance-btn .btn_3 {
@@ -142,8 +161,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  color: #fff;
   border-radius: 20px;
-  background: #f1f4ff;
+  background: #0e1218;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -163,6 +183,12 @@
 .balance .main_block .history_payment {
   margin-left: 180px;
   margin: 50px 0 0 180px;
+  max-width: 1205px;
+  color: #ffff;
+}
+
+.balance .main_block .history_payment p {
+  font-family: "Public Sans", sans-serif;
 }
 
 .balance .main_block .history_payment .history_payment-btn {
@@ -170,18 +196,19 @@
 }
 
 .balance .main_block .history_payment .history_payment-btn .btn_4 {
-  background: #f1f4ff;
+  background: #0e1218;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   border: none;
   padding: 15px 20px 15px 20px;
   outline: none;
-  color: #000;
+  font-family: "Public Sans", sans-serif;
+  color: #fff;
 }
 
 .balance .main_block .history_payment .history_payment-list {
   border-radius: 20px;
-  background: #f1f4ff;
+  background: #0e1218;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -190,10 +217,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-}
-
-.balance .main_block .history_payment .history_payment-list .payment_list-head p {
-  color: #434343;
 }
 
 .balance .main_block .history_payment .history_payment-list .payment_list-head .list_other {

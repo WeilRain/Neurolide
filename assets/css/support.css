@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Public Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+  font-style: normal;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
 .support {
   margin: 0;
   position: relative;
@@ -26,11 +42,12 @@
 .support .main_block .support_list .card .card_info h4 {
   font-size: 20px;
   white-space: pre-line;
+  color: #fff;
 }
 
 .support .main_block .support_list .card .card_info p {
   font-size: 16px;
-  color: #434343;
+  color: #fff;
   white-space: pre-line;
 }
 
@@ -44,7 +61,7 @@
   text-align: center;
   margin: 76px 0 30px 0;
   font-size: 28px;
-  color: #1e1e1e;
+  color: #fff;
 }
 
 .support .main_block .support_form .form {
@@ -61,7 +78,7 @@
 .support .main_block .support_form .form .input input {
   border-radius: 30px;
   height: 38px;
-  border: 1px solid #a3aed0;
+  border: 1px solid #71788c;
   background: transparent;
   outline: none;
   padding: 0 8px;
@@ -69,7 +86,7 @@
 }
 
 .support .main_block .support_form .form .input label {
-  color: #434343;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -84,7 +101,7 @@
 }
 
 .support .main_block .support_form .form .text_input .add_file p {
-  color: #434343;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -96,7 +113,7 @@
 .support .main_block .support_form .submit_btn {
   margin-top: 80px;
   align-self: center;
-  background: #124897;
+  background: #302EFF;
   color: #fff;
   border: none;
   outline: none;
