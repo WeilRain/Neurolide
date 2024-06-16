@@ -2,15 +2,25 @@
     margin: 0;
 }
 // font
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@font-face {
+    font-family: "DM Sans", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+    font-style: normal;
+}
+@font-face {
+    font-family: "Public Sans", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+    font-style: normal;
+}
 :-webkit-any(article, aside, nav, section) h1 {
     font-size: 1.5em;
     margin-block-start: 0;
     margin-block-end: 0;
 }
 body {
-    font-family: Dm Sans !important;
+    font-family: "DM Sans", sans-serif;
+    background: rgba(10, 10, 10, 1);
 }
 // auth
 .auth {
@@ -30,13 +40,14 @@ body {
                 font-size: 40px;
                 text-align: center;
                 font-weight: 500;
+                color: #fff;
             }
             h5 {
                 text-align: center;
                 margin-top: 10px;
                 font-weight: 400;
                 font-size: 16px;
-                color: rgba(163, 174, 208, 1);
+                color: rgba(113, 120, 140, 1);
             }
         }
         .auth_block-select {
@@ -51,7 +62,7 @@ body {
                 text-align: left;
 
                 border-radius: 20px;
-                background-color: rgba(18, 72, 151, 1);
+                background: rgba(24, 26, 30, 1);
                 outline: none;
                 border: none;
                 font-weight: 400;
@@ -59,7 +70,7 @@ body {
                 cursor: pointer;
             }
             .active {
-                background-color: rgba(46, 101, 243, 1);
+                background: rgba(51, 52, 255, 1);
             }
         }
         .auth_block-form {
@@ -72,14 +83,17 @@ body {
                 flex-direction: column;
                 & label {
                     font-size: 20px;
+                    color: #fff;
                 }
                 & input {
                     margin-top: 10px;
                     width: 380px;
                     padding: 20px;
+                    background: transparent;
+
                     border-radius: 20px;
                     outline: none;
-                    border: 1px solid rgba(163, 174, 208, 1);
+                    border: 1px solid rgba(113, 120, 140, 1);
                 }
             }
             .paswd_input {
@@ -88,7 +102,7 @@ body {
                     margin-top: 10px;
                     text-align: right;
                     font-size: 16px;
-                    color: rgba(46, 101, 243, 1);
+                    color: rgba(51, 52, 255, 1);
                 }
             }
 
@@ -105,7 +119,7 @@ body {
                         position: relative;
                         padding-left: 30px;
                         cursor: pointer;
-
+                        color: #fff;
                         &::before {
                             content: "";
                             position: absolute;
@@ -139,8 +153,8 @@ body {
                     }
 
                     &:checked + label::before {
-                        background-color: #2e65f3;
-                        border-color: #2e65f3;
+                        background-color: rgba(51, 52, 255, 1);
+                        border-color: rgba(51, 52, 255, 1);
                     }
 
                     &:checked + label::after {
@@ -153,7 +167,7 @@ body {
             display: flex;
             flex-direction: column;
             .btn_submit {
-                background: linear-gradient(90deg, #70a9ff 0%, #316ec9 50%, #0149b4 100%);
+                background: rgba(51, 52, 255, 1);
                 box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
                 padding: 20px 50px 20px 50px;
                 border-radius: 20px;

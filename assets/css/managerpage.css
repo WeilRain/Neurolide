@@ -131,7 +131,178 @@ body {
 .balance .aside_nav .aside_nav-lsit .active,
 .support .aside_nav .aside_nav-lsit .active,
 .profile_view .aside_nav .aside_nav-lsit .active {
-  color: #302EFF;
+  color: #302eff;
+}
+
+.manager_view .select_page,
+.users .select_page,
+.media .select_page,
+.offering .select_page,
+.balance .select_page,
+.support .select_page,
+.profile_view .select_page {
+  background: #0e1218;
+  padding: 20px 0;
+  width: 100%;
+  margin: 5px 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.manager_view .select_page p,
+.users .select_page p,
+.media .select_page p,
+.offering .select_page p,
+.balance .select_page p,
+.support .select_page p,
+.profile_view .select_page p {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Public Sans", sans-serif;
+}
+
+.manager_view .name_page,
+.users .name_page,
+.media .name_page,
+.offering .name_page,
+.balance .name_page,
+.support .name_page,
+.profile_view .name_page {
+  display: none;
+  margin: 24px 0 0 31px;
+}
+
+.manager_view .name_page h1,
+.users .name_page h1,
+.media .name_page h1,
+.offering .name_page h1,
+.balance .name_page h1,
+.support .name_page h1,
+.profile_view .name_page h1 {
+  background: linear-gradient(90deg, #e5f0ff 0%, #769bfe 51%, #302dff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 51px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.manager_view .aside_nav-mobile,
+.users .aside_nav-mobile,
+.media .aside_nav-mobile,
+.offering .aside_nav-mobile,
+.balance .aside_nav-mobile,
+.support .aside_nav-mobile,
+.profile_view .aside_nav-mobile {
+  display: none;
+}
+
+.manager_view .bottom_support,
+.users .bottom_support,
+.media .bottom_support,
+.offering .bottom_support,
+.balance .bottom_support,
+.support .bottom_support,
+.profile_view .bottom_support {
+  display: none;
+}
+
+.manager_view .sidenav,
+.users .sidenav,
+.media .sidenav,
+.offering .sidenav,
+.balance .sidenav,
+.support .sidenav,
+.profile_view .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.manager_view .sidenav .closebtn,
+.users .sidenav .closebtn,
+.media .sidenav .closebtn,
+.offering .sidenav .closebtn,
+.balance .sidenav .closebtn,
+.support .sidenav .closebtn,
+.profile_view .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.manager_view .sidenav .aside_nav-lsit,
+.users .sidenav .aside_nav-lsit,
+.media .sidenav .aside_nav-lsit,
+.offering .sidenav .aside_nav-lsit,
+.balance .sidenav .aside_nav-lsit,
+.support .sidenav .aside_nav-lsit,
+.profile_view .sidenav .aside_nav-lsit {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  gap: 12px 0;
+  max-width: 255px;
+}
+
+.manager_view .sidenav .aside_nav-lsit a,
+.users .sidenav .aside_nav-lsit a,
+.media .sidenav .aside_nav-lsit a,
+.offering .sidenav .aside_nav-lsit a,
+.balance .sidenav .aside_nav-lsit a,
+.support .sidenav .aside_nav-lsit a,
+.profile_view .sidenav .aside_nav-lsit a {
+  text-decoration: none;
+}
+
+.manager_view .sidenav .aside_nav-lsit .list_item,
+.users .sidenav .aside_nav-lsit .list_item,
+.media .sidenav .aside_nav-lsit .list_item,
+.offering .sidenav .aside_nav-lsit .list_item,
+.balance .sidenav .aside_nav-lsit .list_item,
+.support .sidenav .aside_nav-lsit .list_item,
+.profile_view .sidenav .aside_nav-lsit .list_item {
+  list-style-type: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  justify-content: center;
+  color: #e1e1e1;
+  transition: 0.3s all;
+  font-family: "Public Sans", sans-serif;
+}
+
+.manager_view .sidenav .aside_nav-lsit .list_item:active,
+.users .sidenav .aside_nav-lsit .list_item:active,
+.media .sidenav .aside_nav-lsit .list_item:active,
+.offering .sidenav .aside_nav-lsit .list_item:active,
+.balance .sidenav .aside_nav-lsit .list_item:active,
+.support .sidenav .aside_nav-lsit .list_item:active,
+.profile_view .sidenav .aside_nav-lsit .list_item:active {
+  transform: scale(0.95);
+}
+
+.manager_view .sidenav .aside_nav-lsit .active,
+.users .sidenav .aside_nav-lsit .active,
+.media .sidenav .aside_nav-lsit .active,
+.offering .sidenav .aside_nav-lsit .active,
+.balance .sidenav .aside_nav-lsit .active,
+.support .sidenav .aside_nav-lsit .active,
+.profile_view .sidenav .aside_nav-lsit .active {
+  color: #302eff;
 }
 
 .manager_view .main_block,
@@ -240,6 +411,167 @@ body {
 .support .main_block .header_nav .header_nav-card:nth-child(4),
 .profile_view .main_block .header_nav .header_nav-card:nth-child(4) {
   border-bottom: 9px solid #36393e;
+}
+
+.manager_view .main_block .header_nav .header_nav-card:nth-child(5),
+.users .main_block .header_nav .header_nav-card:nth-child(5),
+.media .main_block .header_nav .header_nav-card:nth-child(5),
+.offering .main_block .header_nav .header_nav-card:nth-child(5),
+.balance .main_block .header_nav .header_nav-card:nth-child(5),
+.support .main_block .header_nav .header_nav-card:nth-child(5),
+.profile_view .main_block .header_nav .header_nav-card:nth-child(5) {
+  border-bottom: 9px solid #ff7a00;
+}
+
+.manager_view .main_block .user_list-mobile,
+.users .main_block .user_list-mobile,
+.media .main_block .user_list-mobile,
+.offering .main_block .user_list-mobile,
+.balance .main_block .user_list-mobile,
+.support .main_block .user_list-mobile,
+.profile_view .main_block .user_list-mobile {
+  display: none;
+}
+
+.manager_view .main_block .user_list-mobile .user_list-header,
+.users .main_block .user_list-mobile .user_list-header,
+.media .main_block .user_list-mobile .user_list-header,
+.offering .main_block .user_list-mobile .user_list-header,
+.balance .main_block .user_list-mobile .user_list-header,
+.support .main_block .user_list-mobile .user_list-header,
+.profile_view .main_block .user_list-mobile .user_list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 63px 25px 34px;
+}
+
+.manager_view .main_block .user_list-mobile .user_list-header h3,
+.users .main_block .user_list-mobile .user_list-header h3,
+.media .main_block .user_list-mobile .user_list-header h3,
+.offering .main_block .user_list-mobile .user_list-header h3,
+.balance .main_block .user_list-mobile .user_list-header h3,
+.support .main_block .user_list-mobile .user_list-header h3,
+.profile_view .main_block .user_list-mobile .user_list-header h3 {
+  background: linear-gradient(90deg, #e5f0ff 0%, #81a4fe 50%, #3433ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 51px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.manager_view .main_block .user_list-mobile .user_list .is_active,
+.users .main_block .user_list-mobile .user_list .is_active,
+.media .main_block .user_list-mobile .user_list .is_active,
+.offering .main_block .user_list-mobile .user_list .is_active,
+.balance .main_block .user_list-mobile .user_list .is_active,
+.support .main_block .user_list-mobile .user_list .is_active,
+.profile_view .main_block .user_list-mobile .user_list .is_active {
+  transform: scale(1.5) !important;
+}
+
+.manager_view .main_block .user_list-mobile .user_list .card,
+.users .main_block .user_list-mobile .user_list .card,
+.media .main_block .user_list-mobile .user_list .card,
+.offering .main_block .user_list-mobile .user_list .card,
+.balance .main_block .user_list-mobile .user_list .card,
+.support .main_block .user_list-mobile .user_list .card,
+.profile_view .main_block .user_list-mobile .user_list .card {
+  display: flex;
+  flex-direction: column;
+  background: #0e1218;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 615px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.manager_view .main_block .user_list-mobile .user_list .card .card_head,
+.users .main_block .user_list-mobile .user_list .card .card_head,
+.media .main_block .user_list-mobile .user_list .card .card_head,
+.offering .main_block .user_list-mobile .user_list .card .card_head,
+.balance .main_block .user_list-mobile .user_list .card .card_head,
+.support .main_block .user_list-mobile .user_list .card .card_head,
+.profile_view .main_block .user_list-mobile .user_list .card .card_head {
+  color: #fff;
+}
+
+.manager_view .main_block .user_list-mobile .user_list .card .card_head .head_item,
+.users .main_block .user_list-mobile .user_list .card .card_head .head_item,
+.media .main_block .user_list-mobile .user_list .card .card_head .head_item,
+.offering .main_block .user_list-mobile .user_list .card .card_head .head_item,
+.balance .main_block .user_list-mobile .user_list .card .card_head .head_item,
+.support .main_block .user_list-mobile .user_list .card .card_head .head_item,
+.profile_view .main_block .user_list-mobile .user_list .card .card_head .head_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.manager_view .main_block .user_list-mobile .user_list .card .card_body .card_body-list,
+.users .main_block .user_list-mobile .user_list .card .card_body .card_body-list,
+.media .main_block .user_list-mobile .user_list .card .card_body .card_body-list,
+.offering .main_block .user_list-mobile .user_list .card .card_body .card_body-list,
+.balance .main_block .user_list-mobile .user_list .card .card_body .card_body-list,
+.support .main_block .user_list-mobile .user_list .card .card_body .card_body-list,
+.profile_view .main_block .user_list-mobile .user_list .card .card_body .card_body-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+}
+
+.manager_view .main_block .user_list-mobile .user_list .card .card_footer,
+.users .main_block .user_list-mobile .user_list .card .card_footer,
+.media .main_block .user_list-mobile .user_list .card .card_footer,
+.offering .main_block .user_list-mobile .user_list .card .card_footer,
+.balance .main_block .user_list-mobile .user_list .card .card_footer,
+.support .main_block .user_list-mobile .user_list .card .card_footer,
+.profile_view .main_block .user_list-mobile .user_list .card .card_footer {
+  color: #fff;
+}
+
+.manager_view .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn,
+.users .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn,
+.media .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn,
+.offering .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn,
+.balance .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn,
+.support .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn,
+.profile_view .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn {
+  display: flex;
+  align-items: center;
+  gap: 0 14px;
+}
+
+.manager_view .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2,
+.users .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2,
+.media .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2,
+.offering .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2,
+.balance .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2,
+.support .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2,
+.profile_view .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2 {
+  background: #181a1e;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 31px;
+  outline: none;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+}
+
+.manager_view .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active,
+.users .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active,
+.media .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active,
+.offering .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active,
+.balance .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active,
+.support .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active,
+.profile_view .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active {
+  background: #3334ff;
 }
 
 .manager_view .main_block .user,
@@ -366,7 +698,8 @@ body {
 .profile_view .main_block .user .user_static {
   background: #0e1218;
   border-radius: 20px;
-  width: 907px;
+  max-width: 907px;
+  width: 100%;
   border-bottom: 10px solid #3334ff;
   position: relative;
   display: flex;
@@ -669,16 +1002,6 @@ body {
   display: flex;
   align-items: center;
   gap: 0 26px;
-}
-
-.manager_view .main_block .users_list .list .list_item .list_item-email,
-.users .main_block .users_list .list .list_item .list_item-email,
-.media .main_block .users_list .list .list_item .list_item-email,
-.offering .main_block .users_list .list .list_item .list_item-email,
-.balance .main_block .users_list .list .list_item .list_item-email,
-.support .main_block .users_list .list .list_item .list_item-email,
-.profile_view .main_block .users_list .list .list_item .list_item-email {
-  margin-left: -100px;
 }
 
 .manager_view .main_block .users_list .list .list_item .list_item-uid,

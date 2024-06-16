@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .manager_view,
+  .users,
+  .media,
+  .offering,
+  .balance,
+  .support,
+  .profile_view {
+    flex-direction: column;
+  }
+  .manager_view .aside_nav,
+  .users .aside_nav,
+  .media .aside_nav,
+  .offering .aside_nav,
+  .balance .aside_nav,
+  .support .aside_nav,
+  .profile_view .aside_nav {
+    display: none;
+  }
+  .manager_view .aside_nav-mobile,
+  .users .aside_nav-mobile,
+  .media .aside_nav-mobile,
+  .offering .aside_nav-mobile,
+  .balance .aside_nav-mobile,
+  .support .aside_nav-mobile,
+  .profile_view .aside_nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 11px 12px;
+    z-index: 20;
+  }
+  .manager_view .aside_nav-mobile .logo,
+  .users .aside_nav-mobile .logo,
+  .media .aside_nav-mobile .logo,
+  .offering .aside_nav-mobile .logo,
+  .balance .aside_nav-mobile .logo,
+  .support .aside_nav-mobile .logo,
+  .profile_view .aside_nav-mobile .logo {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+  }
+  .manager_view .aside_nav-mobile .logo p,
+  .users .aside_nav-mobile .logo p,
+  .media .aside_nav-mobile .logo p,
+  .offering .aside_nav-mobile .logo p,
+  .balance .aside_nav-mobile .logo p,
+  .support .aside_nav-mobile .logo p,
+  .profile_view .aside_nav-mobile .logo p {
+    color: #fff;
+  }
+  .manager_view .bottom_support,
+  .users .bottom_support,
+  .media .bottom_support,
+  .offering .bottom_support,
+  .balance .bottom_support,
+  .support .bottom_support,
+  .profile_view .bottom_support {
+    display: flex;
+    background: black;
+    padding: 11px 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .manager_view .bottom_support img,
+  .users .bottom_support img,
+  .media .bottom_support img,
+  .offering .bottom_support img,
+  .balance .bottom_support img,
+  .support .bottom_support img,
+  .profile_view .bottom_support img {
+    width: 20px;
+  }
+  .manager_view .main_block .header_nav,
+  .users .main_block .header_nav,
+  .media .main_block .header_nav,
+  .offering .main_block .header_nav,
+  .balance .main_block .header_nav,
+  .support .main_block .header_nav,
+  .profile_view .main_block .header_nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .manager_view .main_block .user {
+    justify-content: center;
+  }
+  .manager_view .main_block .user .user_info {
+    max-width: 100%;
+  }
+  .manager_view .main_block .user .user_static {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .manager_view .name_page,
+  .users .name_page,
+  .media .name_page,
+  .offering .name_page,
+  .balance .name_page,
+  .support .name_page,
+  .profile_view .name_page {
+    display: block;
+  }
+  .manager_view .select_page,
+  .users .select_page,
+  .media .select_page,
+  .offering .select_page,
+  .balance .select_page,
+  .support .select_page,
+  .profile_view .select_page {
+    display: flex;
+  }
+  .manager_view .main_block .user_list-mobile,
+  .users .main_block .user_list-mobile,
+  .media .main_block .user_list-mobile,
+  .offering .main_block .user_list-mobile,
+  .balance .main_block .user_list-mobile,
+  .support .main_block .user_list-mobile,
+  .profile_view .main_block .user_list-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 57px;
+  }
+  .manager_view .main_block .users_list,
+  .users .main_block .users_list,
+  .media .main_block .users_list,
+  .offering .main_block .users_list,
+  .balance .main_block .users_list,
+  .support .main_block .users_list,
+  .profile_view .main_block .users_list {
+    display: none;
+  }
+}

@@ -89,3 +89,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// nav
+function toggleNav() {
+  const sidenav = document.getElementById("mySidenav");
+  if (sidenav.style.width === "270px") {
+      sidenav.style.width = "0";
+  } else {
+      sidenav.style.width = "270px";
+  }
+}

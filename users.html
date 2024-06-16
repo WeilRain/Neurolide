@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/managerpage.css">
     <link rel="stylesheet" href="assets/css/user.css">
     <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/response.css">
+
     <title>Neurolide | Користувачі</title>
 </head>
 
@@ -41,6 +43,46 @@
                 </a>
             </div>
         </aside>
+        <aside class="aside_nav-mobile">
+
+            <div class="logo">
+                <img src="assets/img/mobile_logo.png" alt="">
+                <p> Neurolide</p>
+            </div>
+            <img onclick="toggleNav()" src="assets/img/Menu.png" alt="">
+        </aside>
+        <div class="select_page">
+            <img src="assets/img/users_icon.png" alt="">
+            <p>Користувачі</p>
+        </div>
+        <aside class="bottom_support">
+            <img src="assets/img/support_icon.png" alt="">
+        </aside>
+        <div id="mySidenav" class="sidenav">
+            <div class="aside_nav-lsit">
+                <a href="manager.html">
+                    <li class="list_item active"><img src="assets/img/manager_icon.png" alt=""> Менеджер</li>
+                </a>
+                <a href="users.html">
+                    <li class="list_item "><img src="assets/img/users_icon.png" alt=""> Користувачі</li>
+                </a>
+                <a href="media.html">
+                    <li class="list_item"><img src="assets/img/media_icon.png" alt=""> Медіа канали</li>
+                </a>
+                <a href="offering.html">
+                    <li class="list_item"><img src="assets/img/media_icon.png" alt=""> Офери</li>
+                </a>
+                <a href="profile.html">
+                    <li class="list_item"><img src="assets/img/profile.png" alt=""> Профіль</li>
+                </a>
+                <a href="balance.html">
+                    <li class="list_item"><img src="assets/img/balance.png" alt=""> Баланс</li>
+                </a>
+                <a href="support.html">
+                    <li class="list_item"><img src="assets/img/support.png" alt=""> Технічна підтримка</li>
+                </a>
+            </div>
+        </div>
         <div class="main_block">
             <div class="header_nav">
                 <div class="header_nav-card">
@@ -93,63 +135,678 @@
             </div>
 
 
-            <div class="user_list active">
-                <div class="user_list-uid">
-                    <p>112</p>
-                    <img src="assets/img/chekout_icon.png" alt="">
-                </div>
-                <div class="user_list-name">
-                    <p>Mithlesha Kumara Singha</p>
-                </div>
-                <div class="user_list-email">
-                    <p>Катманду, річка</p>
-                </div>
-                <div class="user_list-other">
-                    <div class="list-other-balance">
-                        <p>$122</p>
-                    </div>
-                    <div class="list-other-transaction">
-                        <p>$1489</p>
-                    </div>
-                    <div class="list-other-status">
-                        <p>
-                            Бренд
-                        </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/whitesetting.png"
-                            onclick="openModal()" alt="">
-                    </div>
 
-                </div>
-            </div>
-            <div class="user_list ">
-                <div class="user_list-uid">
-                    <p>113</p>
-                    <img src="assets/img/chekout_icon.png" alt="">
-                </div>
-                <div class="user_list-name">
-                    <p>Mithlesha Kumara Singha</p>
-                </div>
-                <div class="user_list-email">
-                    <p>Ната, Латіпур</p>
-                </div>
-                <div class="user_list-other">
-                    <div class="list-other-balance">
-                        <p>$122</p>
-                    </div>
-                    <div class="list-other-transaction">
-                        <p>$1489</p>
-                    </div>
-                    <div class="list-other-status">
-                        <p>
-                            Бренд
-                        </p>
-                        <img src="assets/img/circledelet_icon.png" alt=""><img src="assets/img/whitesetting.png"
-                            onclick="openModal()" alt="">
-                    </div>
+            <div class="accordion">
 
-                </div>
+                <article>
+                    <input id="article1" type="radio" name="articles">
+                    <label for="article1">
+                        <div class="user_list active">
+                            <div class="user_list-uid">
+                                <p>112</p>
+                                <img src="assets/img/chekout_icon.png" alt="">
+                            </div>
+                            <div class="user_list-name">
+                                <p>Mithlesha Kumara Singha</p>
+                            </div>
+                            <div class="user_list-email">
+                                <p>Катманду, річка</p>
+                            </div>
+                            <div class="user_list-other">
+                                <div class="list-other-balance">
+                                    <p>$122</p>
+                                </div>
+                                <div class="list-other-transaction">
+                                    <p>$1489</p>
+                                </div>
+                                <div class="list-other-status">
+                                    <p>
+                                        Бренд
+                                    </p>
+                                    <img src="assets/img/circledelet_icon.png" alt=""><img
+                                        src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </label>
+                    <div class="accordion_content">
+                        <div class="header_nav">
+                            <div class="header_nav-card">
+                                <span>Індекс</span>
+                                <p>601,78</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Зачислення</span>
+                                <p>3002,49</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Бюджет</span>
+                                <p>216</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Сповіщення</span>
+                                <p>212</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Баланс</span>
+                                <p>212</p>
+                            </div>
+                        </div>
+                        <div class="transaction_block">
+
+                        </div>
+                    </div>
+                </article>
+
+
+
+
             </div>
-            <div class="user_list">
+            <div class="accordion">
+
+                <article>
+                    <input id="article2" type="radio" name="articles">
+                    <label for="article2">
+                        <div class="user_list ">
+                            <div class="user_list-uid">
+                                <p>113</p>
+                                <img src="assets/img/chekout_icon.png" alt="">
+                            </div>
+                            <div class="user_list-name">
+                                <p>Mithlesha Kumara Singha</p>
+                            </div>
+                            <div class="user_list-email">
+                                <p>Ната, Латіпур</p>
+                            </div>
+                            <div class="user_list-other">
+                                <div class="list-other-balance">
+                                    <p>$122</p>
+                                </div>
+                                <div class="list-other-transaction">
+                                    <p>$1489</p>
+                                </div>
+                                <div class="list-other-status">
+                                    <p>
+                                        Бренд
+                                    </p>
+                                    <img src="assets/img/circledelet_icon.png" alt=""><img
+                                        src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </label>
+                    <div class="accordion_content">
+                        <div class="header_nav">
+                            <div class="header_nav-card">
+                                <span>Індекс</span>
+                                <p>601,78</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Зачислення</span>
+                                <p>3002,49</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Бюджет</span>
+                                <p>216</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Сповіщення</span>
+                                <p>212</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Баланс</span>
+                                <p>212</p>
+                            </div>
+                        </div>
+                        <div class="transaction_block">
+
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+            <div class="accordion">
+
+                <article>
+                    <input id="article3" type="radio" name="articles">
+                    <label for="article3">
+                        <div class="user_list ">
+                            <div class="user_list-uid">
+                                <p>114</p>
+                                <img src="assets/img/chekout_icon.png" alt="">
+                            </div>
+                            <div class="user_list-name">
+                                <p>Mithlesha Kumara Singha</p>
+                            </div>
+                            <div class="user_list-email">
+                                <p>Ната, Латіпур</p>
+                            </div>
+                            <div class="user_list-other">
+                                <div class="list-other-balance">
+                                    <p>$122</p>
+                                </div>
+                                <div class="list-other-transaction">
+                                    <p>$1489</p>
+                                </div>
+                                <div class="list-other-status">
+                                    <p>
+                                        Бренд
+                                    </p>
+                                    <img src="assets/img/circledelet_icon.png" alt=""><img
+                                        src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </label>
+                    <div class="accordion_content">
+                        <div class="header_nav">
+                            <div class="header_nav-card">
+                                <span>Індекс</span>
+                                <p>601,78</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Зачислення</span>
+                                <p>3002,49</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Бюджет</span>
+                                <p>216</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Сповіщення</span>
+                                <p>212</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Баланс</span>
+                                <p>212</p>
+                            </div>
+                        </div>
+                        <div class="transaction_block">
+
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+            <div class="accordion">
+
+                <article>
+                    <input id="article4" type="radio" name="articles">
+                    <label for="article4">
+                        <div class="user_list ">
+                            <div class="user_list-uid">
+                                <p>115</p>
+                                <img src="assets/img/chekout_icon.png" alt="">
+                            </div>
+                            <div class="user_list-name">
+                                <p>Mithlesha Kumara Singha</p>
+                            </div>
+                            <div class="user_list-email">
+                                <p>Ната, Латіпур</p>
+                            </div>
+                            <div class="user_list-other">
+                                <div class="list-other-balance">
+                                    <p>$122</p>
+                                </div>
+                                <div class="list-other-transaction">
+                                    <p>$1489</p>
+                                </div>
+                                <div class="list-other-status">
+                                    <p>
+                                        Бренд
+                                    </p>
+                                    <img src="assets/img/circledelet_icon.png" alt=""><img
+                                        src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </label>
+                    <div class="accordion_content">
+                        <div class="header_nav">
+                            <div class="header_nav-card">
+                                <span>Індекс</span>
+                                <p>601,78</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Зачислення</span>
+                                <p>3002,49</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Бюджет</span>
+                                <p>216</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Сповіщення</span>
+                                <p>212</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Баланс</span>
+                                <p>212</p>
+                            </div>
+                        </div>
+                        <div class="transaction_block">
+
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+            <div class="accordion">
+
+                <article>
+                    <input id="article5" type="radio" name="articles">
+                    <label for="article5">
+                        <div class="user_list ">
+                            <div class="user_list-uid">
+                                <p>116</p>
+                                <img src="assets/img/chekout_icon.png" alt="">
+                            </div>
+                            <div class="user_list-name">
+                                <p>Mithlesha Kumara Singha</p>
+                            </div>
+                            <div class="user_list-email">
+                                <p>Ната, Латіпур</p>
+                            </div>
+                            <div class="user_list-other">
+                                <div class="list-other-balance">
+                                    <p>$122</p>
+                                </div>
+                                <div class="list-other-transaction">
+                                    <p>$1489</p>
+                                </div>
+                                <div class="list-other-status">
+                                    <p>
+                                        Бренд
+                                    </p>
+                                    <img src="assets/img/circledelet_icon.png" alt=""><img
+                                        src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </label>
+                    <div class="accordion_content">
+                        <div class="header_nav">
+                            <div class="header_nav-card">
+                                <span>Індекс</span>
+                                <p>601,78</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Зачислення</span>
+                                <p>3002,49</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Бюджет</span>
+                                <p>216</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Сповіщення</span>
+                                <p>212</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Баланс</span>
+                                <p>212</p>
+                            </div>
+                        </div>
+                        <div class="transaction_block">
+
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+            <div class="accordion">
+
+                <article>
+                    <input id="article6" type="radio" name="articles">
+                    <label for="article6">
+                        <div class="user_list ">
+                            <div class="user_list-uid">
+                                <p>117</p>
+                                <img src="assets/img/chekout_icon.png" alt="">
+                            </div>
+                            <div class="user_list-name">
+                                <p>Mithlesha Kumara Singha</p>
+                            </div>
+                            <div class="user_list-email">
+                                <p>Ната, Латіпур</p>
+                            </div>
+                            <div class="user_list-other">
+                                <div class="list-other-balance">
+                                    <p>$122</p>
+                                </div>
+                                <div class="list-other-transaction">
+                                    <p>$1489</p>
+                                </div>
+                                <div class="list-other-status">
+                                    <p>
+                                        Бренд
+                                    </p>
+                                    <img src="assets/img/circledelet_icon.png" alt=""><img
+                                        src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </label>
+                    <div class="accordion_content">
+                        <div class="header_nav">
+                            <div class="header_nav-card">
+                                <span>Індекс</span>
+                                <p>601,78</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Зачислення</span>
+                                <p>3002,49</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Бюджет</span>
+                                <p>216</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Сповіщення</span>
+                                <p>212</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Баланс</span>
+                                <p>212</p>
+                            </div>
+                        </div>
+                        <div class="transaction_block">
+
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+            <div class="accordion">
+
+                <article>
+                    <input id="article7" type="radio" name="articles">
+                    <label for="article7">
+                        <div class="user_list ">
+                            <div class="user_list-uid">
+                                <p>118</p>
+                                <img src="assets/img/chekout_icon.png" alt="">
+                            </div>
+                            <div class="user_list-name">
+                                <p>Mithlesha Kumara Singha</p>
+                            </div>
+                            <div class="user_list-email">
+                                <p>Ната, Латіпур</p>
+                            </div>
+                            <div class="user_list-other">
+                                <div class="list-other-balance">
+                                    <p>$122</p>
+                                </div>
+                                <div class="list-other-transaction">
+                                    <p>$1489</p>
+                                </div>
+                                <div class="list-other-status">
+                                    <p>
+                                        Бренд
+                                    </p>
+                                    <img src="assets/img/circledelet_icon.png" alt=""><img
+                                        src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </label>
+                    <div class="accordion_content">
+                        <div class="header_nav">
+                            <div class="header_nav-card">
+                                <span>Індекс</span>
+                                <p>601,78</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Зачислення</span>
+                                <p>3002,49</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Бюджет</span>
+                                <p>216</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Сповіщення</span>
+                                <p>212</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Баланс</span>
+                                <p>212</p>
+                            </div>
+                        </div>
+                        <div class="transaction_block">
+
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+            <div class="accordion">
+
+                <article>
+                    <input id="article8" type="radio" name="articles">
+                    <label for="article8">
+                        <div class="user_list ">
+                            <div class="user_list-uid">
+                                <p>119</p>
+                                <img src="assets/img/chekout_icon.png" alt="">
+                            </div>
+                            <div class="user_list-name">
+                                <p>Mithlesha Kumara Singha</p>
+                            </div>
+                            <div class="user_list-email">
+                                <p>Ната, Латіпур</p>
+                            </div>
+                            <div class="user_list-other">
+                                <div class="list-other-balance">
+                                    <p>$122</p>
+                                </div>
+                                <div class="list-other-transaction">
+                                    <p>$1489</p>
+                                </div>
+                                <div class="list-other-status">
+                                    <p>
+                                        Бренд
+                                    </p>
+                                    <img src="assets/img/circledelet_icon.png" alt=""><img
+                                        src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </label>
+                    <div class="accordion_content">
+                        <div class="header_nav">
+                            <div class="header_nav-card">
+                                <span>Індекс</span>
+                                <p>601,78</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Зачислення</span>
+                                <p>3002,49</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Бюджет</span>
+                                <p>216</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Сповіщення</span>
+                                <p>212</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Баланс</span>
+                                <p>212</p>
+                            </div>
+                        </div>
+                        <div class="transaction_block">
+
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+            <div class="accordion">
+
+                <article>
+                    <input id="article9" type="radio" name="articles">
+                    <label for="article9">
+                        <div class="user_list ">
+                            <div class="user_list-uid">
+                                <p>120</p>
+                                <img src="assets/img/chekout_icon.png" alt="">
+                            </div>
+                            <div class="user_list-name">
+                                <p>Mithlesha Kumara Singha</p>
+                            </div>
+                            <div class="user_list-email">
+                                <p>Ната, Латіпур</p>
+                            </div>
+                            <div class="user_list-other">
+                                <div class="list-other-balance">
+                                    <p>$122</p>
+                                </div>
+                                <div class="list-other-transaction">
+                                    <p>$1489</p>
+                                </div>
+                                <div class="list-other-status">
+                                    <p>
+                                        Бренд
+                                    </p>
+                                    <img src="assets/img/circledelet_icon.png" alt=""><img
+                                        src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </label>
+                    <div class="accordion_content">
+                        <div class="header_nav">
+                            <div class="header_nav-card">
+                                <span>Індекс</span>
+                                <p>601,78</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Зачислення</span>
+                                <p>3002,49</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Бюджет</span>
+                                <p>216</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Сповіщення</span>
+                                <p>212</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Баланс</span>
+                                <p>212</p>
+                            </div>
+                        </div>
+                        <div class="transaction_block">
+
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+            <div class="accordion">
+
+                <article>
+                    <input id="article10" type="radio" name="articles">
+                    <label for="article10">
+                        <div class="user_list ">
+                            <div class="user_list-uid">
+                                <p>121</p>
+                                <img src="assets/img/chekout_icon.png" alt="">
+                            </div>
+                            <div class="user_list-name">
+                                <p>Mithlesha Kumara Singha</p>
+                            </div>
+                            <div class="user_list-email">
+                                <p>Ната, Латіпур</p>
+                            </div>
+                            <div class="user_list-other">
+                                <div class="list-other-balance">
+                                    <p>$122</p>
+                                </div>
+                                <div class="list-other-transaction">
+                                    <p>$1489</p>
+                                </div>
+                                <div class="list-other-status">
+                                    <p>
+                                        Бренд
+                                    </p>
+                                    <img src="assets/img/circledelet_icon.png" alt=""><img
+                                        src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </label>
+                    <div class="accordion_content">
+                        <div class="header_nav">
+                            <div class="header_nav-card">
+                                <span>Індекс</span>
+                                <p>601,78</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Зачислення</span>
+                                <p>3002,49</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Бюджет</span>
+                                <p>216</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Сповіщення</span>
+                                <p>212</p>
+                            </div>
+                            <div class="header_nav-card">
+                                <span>Баланс</span>
+                                <p>212</p>
+                            </div>
+                        </div>
+                        <div class="transaction_block">
+
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+            <!-- <div class="user_list">
                 <div class="user_list-uid">
                     <p>114</p>
                     <img src="assets/img/chekout_icon.png" alt="">
@@ -484,7 +1141,7 @@
 
                 </div>
 
-            </div>
+            </div> -->
 
         </div>
         <!-- modal box -->
@@ -525,6 +1182,7 @@
     </section>
     <!-- script -->
     <script src="assets/js/modal.js"></script>
+
 </body>
 
 </html>

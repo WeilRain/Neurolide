@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/managerpage.css">
     <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/response.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
     <title>Neurolide | Сторінка Менеджера</title>
 </head>
 
@@ -40,6 +43,47 @@
                 </a>
             </div>
         </aside>
+        <aside class="aside_nav-mobile">
+
+            <div class="logo">
+                <img src="assets/img/mobile_logo.png" alt="">
+                <p> Neurolide</p>
+            </div>
+            <img onclick="toggleNav()" src="assets/img/Menu.png" alt="">
+        </aside>
+        <aside class="bottom_support">
+            <img src="assets/img/support_icon.png" alt="">
+        </aside>
+        <div class="name_page">
+            <h1>Your Profile</h1>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <div class="aside_nav-lsit">
+                <a href="manager.html">
+                    <li class="list_item active"><img src="assets/img/manager_icon.png" alt=""> Менеджер</li>
+                </a>
+                <a href="users.html">
+                    <li class="list_item "><img src="assets/img/users_icon.png" alt=""> Користувачі</li>
+                </a>
+                <a href="media.html">
+                    <li class="list_item"><img src="assets/img/media_icon.png" alt=""> Медіа канали</li>
+                </a>
+                <a href="offering.html">
+                    <li class="list_item"><img src="assets/img/media_icon.png" alt=""> Офери</li>
+                </a>
+                <a href="profile.html">
+                    <li class="list_item"><img src="assets/img/profile.png" alt=""> Профіль</li>
+                </a>
+                <a href="balance.html">
+                    <li class="list_item"><img src="assets/img/balance.png" alt=""> Баланс</li>
+                </a>
+                <a href="support.html">
+                    <li class="list_item"><img src="assets/img/support.png" alt=""> Технічна підтримка</li>
+                </a>
+            </div>
+        </div>
+
         <div class="main_block">
             <div class="header_nav">
                 <div class="header_nav-card">
@@ -99,6 +143,322 @@
                         <p>212</p>
                     </div>
                 </div>
+            </div>
+            <div class="user_list-mobile">
+                <div class="user_list-header">
+                    <h3>Your Offers</h3>
+                    <img src="assets/img/offersadd_icon.png" alt="">
+                </div>
+                <div class="user_list">
+                    <section class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>UID 112 Статус</p>
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div class="list_item">
+                                                <span>Назва</span>
+                                                <p>Mithlesha Kumara Singha</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Бренд</span>
+                                                <p>Kritipur, Kathmandu</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Виплати</span>
+                                                <p>$122</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Баланс</span>
+                                                <p>$1489</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+                                            <button class="btn_2 active">RevShare</button><button
+                                                class="btn_2">CPL</button><button class="btn_2">CPC</button><button
+                                                class="btn_2">CPM</button><button class="btn_2">CPH</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>UID 112 Статус</p>
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div class="list_item">
+                                                <span>Назва</span>
+                                                <p>Mithlesha Kumara Singha</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Бренд</span>
+                                                <p>Kritipur, Kathmandu</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Виплати</span>
+                                                <p>$122</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Баланс</span>
+                                                <p>$1489</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+                                            <button class="btn_2 active">RevShare</button><button
+                                                class="btn_2">CPL</button><button class="btn_2">CPC</button><button
+                                                class="btn_2">CPM</button><button class="btn_2">CPH</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>UID 112 Статус</p>
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div class="list_item">
+                                                <span>Назва</span>
+                                                <p>Mithlesha Kumara Singha</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Бренд</span>
+                                                <p>Kritipur, Kathmandu</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Виплати</span>
+                                                <p>$122</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Баланс</span>
+                                                <p>$1489</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+                                            <button class="btn_2 active">RevShare</button><button
+                                                class="btn_2">CPL</button><button class="btn_2">CPC</button><button
+                                                class="btn_2">CPM</button><button class="btn_2">CPH</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>UID 112 Статус</p>
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div class="list_item">
+                                                <span>Назва</span>
+                                                <p>Mithlesha Kumara Singha</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Бренд</span>
+                                                <p>Kritipur, Kathmandu</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Виплати</span>
+                                                <p>$122</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Баланс</span>
+                                                <p>$1489</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+                                            <button class="btn_2 active">RevShare</button><button
+                                                class="btn_2">CPL</button><button class="btn_2">CPC</button><button
+                                                class="btn_2">CPM</button><button class="btn_2">CPH</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>UID 112 Статус</p>
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div class="list_item">
+                                                <span>Назва</span>
+                                                <p>Mithlesha Kumara Singha</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Бренд</span>
+                                                <p>Kritipur, Kathmandu</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Виплати</span>
+                                                <p>$122</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Баланс</span>
+                                                <p>$1489</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+                                            <button class="btn_2 active">RevShare</button><button
+                                                class="btn_2">CPL</button><button class="btn_2">CPC</button><button
+                                                class="btn_2">CPM</button><button class="btn_2">CPH</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>UID 112 Статус</p>
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div class="list_item">
+                                                <span>Назва</span>
+                                                <p>Mithlesha Kumara Singha</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Бренд</span>
+                                                <p>Kritipur, Kathmandu</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Виплати</span>
+                                                <p>$122</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Баланс</span>
+                                                <p>$1489</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+                                            <button class="btn_2 active">RevShare</button><button
+                                                class="btn_2">CPL</button><button class="btn_2">CPC</button><button
+                                                class="btn_2">CPM</button><button class="btn_2">CPH</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>UID 112 Статус</p>
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div class="list_item">
+                                                <span>Назва</span>
+                                                <p>Mithlesha Kumara Singha</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Бренд</span>
+                                                <p>Kritipur, Kathmandu</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Виплати</span>
+                                                <p>$122</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Баланс</span>
+                                                <p>$1489</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+                                            <button class="btn_2 active">RevShare</button><button
+                                                class="btn_2">CPL</button><button class="btn_2">CPC</button><button
+                                                class="btn_2">CPM</button><button class="btn_2">CPH</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
             </div>
             <div class="users_list">
                 <div class="users_list-head">
@@ -317,6 +677,7 @@
 
 
     </section>
+
     <!-- modal_box -->
 
     <div id="myModal" class="modal">
@@ -417,6 +778,23 @@
     <!-- script -->
 
     <script src="assets/js/modal.js"></script>
+    <script>
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+                arrows: false,
+                width: '100%',
+                gap: '20px',
+                focus: 'center',
+                padding: '2rem',
+                pagination: false,
+
+            }).mount();
+        });
+    </script>
 </body>
 
 </html>

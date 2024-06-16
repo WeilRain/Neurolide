@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+@media screen and (max-width: 1280px) {
+    .manager_view,
+    .users,
+    .media,
+    .offering,
+    .balance,
+    .support,
+    .profile_view {
+        flex-direction: column;
+        .aside_nav {
+            display: none;
+        }
+
+        .aside_nav-mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 1);
+            padding: 11px 12px;
+            z-index: 20;
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 0 12px;
+                & p {
+                    color: #fff;
+                }
+            }
+        }
+        .bottom_support {
+            display: flex;
+            background: rgba(0, 0, 0, 1);
+            padding: 11px 12px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            & img {
+                width: 20px;
+            }
+        }
+        .main_block {
+            .header_nav {
+                display: none;
+            }
+            .user {
+                .user_static {
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1040px) {
+    .manager_view {
+        .main_block {
+            .user {
+                justify-content: center;
+                .user_info {
+                    max-width: 100%;
+                }
+                .user_static {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 975px) {
+    .manager_view,
+    .users,
+    .media,
+    .offering,
+    .balance,
+    .support,
+    .profile_view {
+        .name_page {
+            display: block;
+        }
+        .select_page {
+            display: flex;
+        }
+        .main_block {
+            .user_list-mobile {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 57px;
+            }
+            .users_list {
+                display: none;
+            }
+        }
+    }
+}

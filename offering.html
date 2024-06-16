@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/managerpage.css">
     <link rel="stylesheet" href="assets/css/offering.css">
     <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/response.css">
+
     <title>Neurolide | Офери</title>
 </head>
 
@@ -41,6 +43,46 @@
                 </a>
             </div>
         </aside>
+        <aside class="aside_nav-mobile">
+
+            <div class="logo">
+                <img src="assets/img/mobile_logo.png" alt="">
+                <p> Neurolide</p>
+            </div>
+            <img onclick="toggleNav()" src="assets/img/Menu.png" alt="">
+        </aside>
+        <aside class="bottom_support">
+            <img src="assets/img/support_icon.png" alt="">
+        </aside>
+        <div class="select_page">
+            <img src="assets/img/media_icon.png" alt="">
+            <p> Офери</p>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="aside_nav-lsit">
+                <a href="manager.html">
+                    <li class="list_item active"><img src="assets/img/manager_icon.png" alt=""> Менеджер</li>
+                </a>
+                <a href="users.html">
+                    <li class="list_item "><img src="assets/img/users_icon.png" alt=""> Користувачі</li>
+                </a>
+                <a href="media.html">
+                    <li class="list_item"><img src="assets/img/media_icon.png" alt=""> Медіа канали</li>
+                </a>
+                <a href="offering.html">
+                    <li class="list_item"><img src="assets/img/media_icon.png" alt=""> Офери</li>
+                </a>
+                <a href="profile.html">
+                    <li class="list_item"><img src="assets/img/profile.png" alt=""> Профіль</li>
+                </a>
+                <a href="balance.html">
+                    <li class="list_item"><img src="assets/img/balance.png" alt=""> Баланс</li>
+                </a>
+                <a href="support.html">
+                    <li class="list_item"><img src="assets/img/support.png" alt=""> Технічна підтримка</li>
+                </a>
+            </div>
+        </div>
         <div class="main_block">
             <div class="header_nav">
                 <div class="header_nav-card">
@@ -644,7 +686,7 @@
                         </div>
                     </div>
                     <div class="modal_payment-btn">
-                        <button class="btn_cancel btn_5">
+                        <button class="btn_cancel btn_5" onclick="closeModal()">
                             Відмінити
                         </button>
                         <button class="btn_add btn_5">+ Додати офер</button>

@@ -1,6 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 * {
   margin: 0;
+}
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Public Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+  font-style: normal;
 }
 
 :-webkit-any(article, aside, nav, section) h1 {
@@ -10,7 +21,8 @@
 }
 
 body {
-  font-family: Dm Sans !important;
+  font-family: "DM Sans", sans-serif;
+  background: #0a0a0a;
 }
 
 .auth {
@@ -35,6 +47,7 @@ body {
   font-size: 40px;
   text-align: center;
   font-weight: 500;
+  color: #fff;
 }
 
 .auth .auth_block .auth_block-header h5 {
@@ -42,7 +55,7 @@ body {
   margin-top: 10px;
   font-weight: 400;
   font-size: 16px;
-  color: #a3aed0;
+  color: #71788c;
 }
 
 .auth .auth_block .auth_block-select {
@@ -58,7 +71,7 @@ body {
   width: 216px;
   text-align: left;
   border-radius: 20px;
-  background-color: #124897;
+  background: #181a1e;
   outline: none;
   border: none;
   font-weight: 400;
@@ -67,7 +80,7 @@ body {
 }
 
 .auth .auth_block .auth_block-select .active {
-  background-color: #2e65f3;
+  background: #3334ff;
 }
 
 .auth .auth_block .auth_block-form {
@@ -84,15 +97,17 @@ body {
 
 .auth .auth_block .auth_block-form .form label {
   font-size: 20px;
+  color: #fff;
 }
 
 .auth .auth_block .auth_block-form .form input {
   margin-top: 10px;
   width: 380px;
   padding: 20px;
+  background: transparent;
   border-radius: 20px;
   outline: none;
-  border: 1px solid #a3aed0;
+  border: 1px solid #71788c;
 }
 
 .auth .auth_block .auth_block-form .paswd_input {
@@ -103,7 +118,7 @@ body {
   margin-top: 10px;
   text-align: right;
   font-size: 16px;
-  color: #2e65f3;
+  color: #3334ff;
 }
 
 .auth .auth_block .auth_block-form .checkbox_input {
@@ -123,6 +138,7 @@ body {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
+  color: #fff;
 }
 
 .auth .auth_block .auth_block-form .checkbox_input .checkbox + label::before {
@@ -155,8 +171,8 @@ body {
 }
 
 .auth .auth_block .auth_block-form .checkbox_input .checkbox:checked + label::before {
-  background-color: #2e65f3;
-  border-color: #2e65f3;
+  background-color: #3334ff;
+  border-color: #3334ff;
 }
 
 .auth .auth_block .auth_block-form .checkbox_input .checkbox:checked + label::after {
@@ -169,7 +185,7 @@ body {
 }
 
 .auth .auth_block .auth_block-submtit .btn_submit {
-  background: linear-gradient(90deg, #70a9ff 0%, #316ec9 50%, #0149b4 100%);
+  background: #3334ff;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
   padding: 20px 50px 20px 50px;
   border-radius: 20px;
