@@ -209,7 +209,8 @@ body {
                 }
             }
         }
-        .user_list-mobile {
+        .user_list-mobile,
+        .media_list-mobile {
             display: none;
             .user_list-header {
                 display: flex;
@@ -226,66 +227,71 @@ body {
                     font-family: "DM Sans", sans-serif;
                 }
             }
-            .user_list {
-                // display: flex;
-                // gap: 0 10px;
-                // position: relative;
-                // overflow-x: scroll;
-                // margin: 0 10px;
+            // .user_list {
+            // display: flex;
+            // gap: 0 10px;
+            // position: relative;
+            // overflow-x: scroll;
+            // margin: 0 10px;
 
-                .is_active {
-                    transform: scale(1.5) !important;
+            .is_active {
+                transform: scale(1.5) !important;
+            }
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                background: rgba(14, 18, 24, 1);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+                border-radius: 20px;
+                max-width: 615px;
+                padding: 20px;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                .card_head {
+                    color: #fff;
+                    .head_item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
                 }
-
-                .card {
-                    display: flex;
-                    flex-direction: column;
-                    background: rgba(14, 18, 24, 1);
-                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
-                    border-radius: 20px;
-                    max-width: 615px;
-                    padding: 20px;
-                    width: 100%;
-                    margin: 0 auto;
-                    .card_head {
+                .card_body {
+                    .card_body-list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px 0;
                         color: #fff;
-                        .head_item {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                        }
+                        font-family: "DM Sans", sans-serif;
                     }
-                    .card_body {
-                        .card_body-list {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 20px 0;
+                }
+                .card_footer {
+                    color: #fff;
+                    & p{
+                        font-size: 20px;
+                    }
+                    .card_footer-btn {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 14px;
+                        margin-top: 10px;
+                        .btn_2 {
+                            background: rgba(24, 26, 30, 1);
+                            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+                            border-radius: 31px;
+                            outline: none;
                             color: #fff;
-                            font-family: "DM Sans", sans-serif;
+                            border: none;
+                            padding: 12px 20px;
                         }
-                    }
-                    .card_footer {
-                        color: #fff;
-                        .card_footer-btn {
-                            display: flex;
-                            align-items: center;
-                            gap: 0 14px;
-                            .btn_2 {
-                                background: rgba(24, 26, 30, 1);
-                                box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
-                                border-radius: 31px;
-                                outline: none;
-                                color: #fff;
-                                border: none;
-                                padding: 12px 20px;
-                            }
-                            .active {
-                                background: rgba(51, 52, 255, 1);
-                            }
+                        .active {
+                            background: rgba(51, 52, 255, 1);
                         }
                     }
                 }
             }
+            // }
         }
         .user {
             display: flex;

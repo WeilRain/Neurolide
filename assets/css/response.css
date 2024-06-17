@@ -67,6 +67,7 @@
     padding: 11px 12px;
     position: fixed;
     bottom: 0;
+    z-index: 2;
     width: 100%;
   }
   .manager_view .bottom_support img,
@@ -89,14 +90,29 @@
   }
 }
 
-@media screen and (max-width: 1040px) {
-  .manager_view .main_block .user {
+@media screen and (max-width: 1110px) {
+  .manager_view .main_block .media_head,
+  .manager_view .main_block .media_list-head,
+  .manager_view .main_block .media_list,
+  .media .main_block .media_head,
+  .media .main_block .media_list-head,
+  .media .main_block .media_list {
+    display: none;
+  }
+  .manager_view .main_block .media_list-mobile,
+  .media .main_block .media_list-mobile {
+    display: block;
+  }
+  .manager_view .main_block .user,
+  .media .main_block .user {
     justify-content: center;
   }
-  .manager_view .main_block .user .user_info {
+  .manager_view .main_block .user .user_info,
+  .media .main_block .user .user_info {
     max-width: 100%;
   }
-  .manager_view .main_block .user .user_static {
+  .manager_view .main_block .user .user_static,
+  .media .main_block .user .user_static {
     display: none;
   }
 }
@@ -110,6 +126,15 @@
   .support .name_page,
   .profile_view .name_page {
     display: block;
+  }
+  .manager_view .accordion,
+  .users .accordion,
+  .media .accordion,
+  .offering .accordion,
+  .balance .accordion,
+  .support .accordion,
+  .profile_view .accordion {
+    display: none;
   }
   .manager_view .select_page,
   .users .select_page,
@@ -132,12 +157,19 @@
     margin-bottom: 57px;
   }
   .manager_view .main_block .users_list,
+  .manager_view .main_block .users_list-head,
   .users .main_block .users_list,
+  .users .main_block .users_list-head,
   .media .main_block .users_list,
+  .media .main_block .users_list-head,
   .offering .main_block .users_list,
+  .offering .main_block .users_list-head,
   .balance .main_block .users_list,
+  .balance .main_block .users_list-head,
   .support .main_block .users_list,
-  .profile_view .main_block .users_list {
+  .support .main_block .users_list-head,
+  .profile_view .main_block .users_list,
+  .profile_view .main_block .users_list-head {
     display: none;
   }
 }

@@ -424,22 +424,36 @@ body {
 }
 
 .manager_view .main_block .user_list-mobile,
+.manager_view .main_block .media_list-mobile,
 .users .main_block .user_list-mobile,
+.users .main_block .media_list-mobile,
 .media .main_block .user_list-mobile,
+.media .main_block .media_list-mobile,
 .offering .main_block .user_list-mobile,
+.offering .main_block .media_list-mobile,
 .balance .main_block .user_list-mobile,
+.balance .main_block .media_list-mobile,
 .support .main_block .user_list-mobile,
-.profile_view .main_block .user_list-mobile {
+.support .main_block .media_list-mobile,
+.profile_view .main_block .user_list-mobile,
+.profile_view .main_block .media_list-mobile {
   display: none;
 }
 
 .manager_view .main_block .user_list-mobile .user_list-header,
+.manager_view .main_block .media_list-mobile .user_list-header,
 .users .main_block .user_list-mobile .user_list-header,
+.users .main_block .media_list-mobile .user_list-header,
 .media .main_block .user_list-mobile .user_list-header,
+.media .main_block .media_list-mobile .user_list-header,
 .offering .main_block .user_list-mobile .user_list-header,
+.offering .main_block .media_list-mobile .user_list-header,
 .balance .main_block .user_list-mobile .user_list-header,
+.balance .main_block .media_list-mobile .user_list-header,
 .support .main_block .user_list-mobile .user_list-header,
-.profile_view .main_block .user_list-mobile .user_list-header {
+.support .main_block .media_list-mobile .user_list-header,
+.profile_view .main_block .user_list-mobile .user_list-header,
+.profile_view .main_block .media_list-mobile .user_list-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -447,12 +461,19 @@ body {
 }
 
 .manager_view .main_block .user_list-mobile .user_list-header h3,
+.manager_view .main_block .media_list-mobile .user_list-header h3,
 .users .main_block .user_list-mobile .user_list-header h3,
+.users .main_block .media_list-mobile .user_list-header h3,
 .media .main_block .user_list-mobile .user_list-header h3,
+.media .main_block .media_list-mobile .user_list-header h3,
 .offering .main_block .user_list-mobile .user_list-header h3,
+.offering .main_block .media_list-mobile .user_list-header h3,
 .balance .main_block .user_list-mobile .user_list-header h3,
+.balance .main_block .media_list-mobile .user_list-header h3,
 .support .main_block .user_list-mobile .user_list-header h3,
-.profile_view .main_block .user_list-mobile .user_list-header h3 {
+.support .main_block .media_list-mobile .user_list-header h3,
+.profile_view .main_block .user_list-mobile .user_list-header h3,
+.profile_view .main_block .media_list-mobile .user_list-header h3 {
   background: linear-gradient(90deg, #e5f0ff 0%, #81a4fe 50%, #3433ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -462,23 +483,37 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
-.manager_view .main_block .user_list-mobile .user_list .is_active,
-.users .main_block .user_list-mobile .user_list .is_active,
-.media .main_block .user_list-mobile .user_list .is_active,
-.offering .main_block .user_list-mobile .user_list .is_active,
-.balance .main_block .user_list-mobile .user_list .is_active,
-.support .main_block .user_list-mobile .user_list .is_active,
-.profile_view .main_block .user_list-mobile .user_list .is_active {
+.manager_view .main_block .user_list-mobile .is_active,
+.manager_view .main_block .media_list-mobile .is_active,
+.users .main_block .user_list-mobile .is_active,
+.users .main_block .media_list-mobile .is_active,
+.media .main_block .user_list-mobile .is_active,
+.media .main_block .media_list-mobile .is_active,
+.offering .main_block .user_list-mobile .is_active,
+.offering .main_block .media_list-mobile .is_active,
+.balance .main_block .user_list-mobile .is_active,
+.balance .main_block .media_list-mobile .is_active,
+.support .main_block .user_list-mobile .is_active,
+.support .main_block .media_list-mobile .is_active,
+.profile_view .main_block .user_list-mobile .is_active,
+.profile_view .main_block .media_list-mobile .is_active {
   transform: scale(1.5) !important;
 }
 
-.manager_view .main_block .user_list-mobile .user_list .card,
-.users .main_block .user_list-mobile .user_list .card,
-.media .main_block .user_list-mobile .user_list .card,
-.offering .main_block .user_list-mobile .user_list .card,
-.balance .main_block .user_list-mobile .user_list .card,
-.support .main_block .user_list-mobile .user_list .card,
-.profile_view .main_block .user_list-mobile .user_list .card {
+.manager_view .main_block .user_list-mobile .card,
+.manager_view .main_block .media_list-mobile .card,
+.users .main_block .user_list-mobile .card,
+.users .main_block .media_list-mobile .card,
+.media .main_block .user_list-mobile .card,
+.media .main_block .media_list-mobile .card,
+.offering .main_block .user_list-mobile .card,
+.offering .main_block .media_list-mobile .card,
+.balance .main_block .user_list-mobile .card,
+.balance .main_block .media_list-mobile .card,
+.support .main_block .user_list-mobile .card,
+.support .main_block .media_list-mobile .card,
+.profile_view .main_block .user_list-mobile .card,
+.profile_view .main_block .media_list-mobile .card {
   display: flex;
   flex-direction: column;
   background: #0e1218;
@@ -487,38 +522,60 @@ body {
   max-width: 615px;
   padding: 20px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
-.manager_view .main_block .user_list-mobile .user_list .card .card_head,
-.users .main_block .user_list-mobile .user_list .card .card_head,
-.media .main_block .user_list-mobile .user_list .card .card_head,
-.offering .main_block .user_list-mobile .user_list .card .card_head,
-.balance .main_block .user_list-mobile .user_list .card .card_head,
-.support .main_block .user_list-mobile .user_list .card .card_head,
-.profile_view .main_block .user_list-mobile .user_list .card .card_head {
+.manager_view .main_block .user_list-mobile .card .card_head,
+.manager_view .main_block .media_list-mobile .card .card_head,
+.users .main_block .user_list-mobile .card .card_head,
+.users .main_block .media_list-mobile .card .card_head,
+.media .main_block .user_list-mobile .card .card_head,
+.media .main_block .media_list-mobile .card .card_head,
+.offering .main_block .user_list-mobile .card .card_head,
+.offering .main_block .media_list-mobile .card .card_head,
+.balance .main_block .user_list-mobile .card .card_head,
+.balance .main_block .media_list-mobile .card .card_head,
+.support .main_block .user_list-mobile .card .card_head,
+.support .main_block .media_list-mobile .card .card_head,
+.profile_view .main_block .user_list-mobile .card .card_head,
+.profile_view .main_block .media_list-mobile .card .card_head {
   color: #fff;
 }
 
-.manager_view .main_block .user_list-mobile .user_list .card .card_head .head_item,
-.users .main_block .user_list-mobile .user_list .card .card_head .head_item,
-.media .main_block .user_list-mobile .user_list .card .card_head .head_item,
-.offering .main_block .user_list-mobile .user_list .card .card_head .head_item,
-.balance .main_block .user_list-mobile .user_list .card .card_head .head_item,
-.support .main_block .user_list-mobile .user_list .card .card_head .head_item,
-.profile_view .main_block .user_list-mobile .user_list .card .card_head .head_item {
+.manager_view .main_block .user_list-mobile .card .card_head .head_item,
+.manager_view .main_block .media_list-mobile .card .card_head .head_item,
+.users .main_block .user_list-mobile .card .card_head .head_item,
+.users .main_block .media_list-mobile .card .card_head .head_item,
+.media .main_block .user_list-mobile .card .card_head .head_item,
+.media .main_block .media_list-mobile .card .card_head .head_item,
+.offering .main_block .user_list-mobile .card .card_head .head_item,
+.offering .main_block .media_list-mobile .card .card_head .head_item,
+.balance .main_block .user_list-mobile .card .card_head .head_item,
+.balance .main_block .media_list-mobile .card .card_head .head_item,
+.support .main_block .user_list-mobile .card .card_head .head_item,
+.support .main_block .media_list-mobile .card .card_head .head_item,
+.profile_view .main_block .user_list-mobile .card .card_head .head_item,
+.profile_view .main_block .media_list-mobile .card .card_head .head_item {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.manager_view .main_block .user_list-mobile .user_list .card .card_body .card_body-list,
-.users .main_block .user_list-mobile .user_list .card .card_body .card_body-list,
-.media .main_block .user_list-mobile .user_list .card .card_body .card_body-list,
-.offering .main_block .user_list-mobile .user_list .card .card_body .card_body-list,
-.balance .main_block .user_list-mobile .user_list .card .card_body .card_body-list,
-.support .main_block .user_list-mobile .user_list .card .card_body .card_body-list,
-.profile_view .main_block .user_list-mobile .user_list .card .card_body .card_body-list {
+.manager_view .main_block .user_list-mobile .card .card_body .card_body-list,
+.manager_view .main_block .media_list-mobile .card .card_body .card_body-list,
+.users .main_block .user_list-mobile .card .card_body .card_body-list,
+.users .main_block .media_list-mobile .card .card_body .card_body-list,
+.media .main_block .user_list-mobile .card .card_body .card_body-list,
+.media .main_block .media_list-mobile .card .card_body .card_body-list,
+.offering .main_block .user_list-mobile .card .card_body .card_body-list,
+.offering .main_block .media_list-mobile .card .card_body .card_body-list,
+.balance .main_block .user_list-mobile .card .card_body .card_body-list,
+.balance .main_block .media_list-mobile .card .card_body .card_body-list,
+.support .main_block .user_list-mobile .card .card_body .card_body-list,
+.support .main_block .media_list-mobile .card .card_body .card_body-list,
+.profile_view .main_block .user_list-mobile .card .card_body .card_body-list,
+.profile_view .main_block .media_list-mobile .card .card_body .card_body-list {
   display: flex;
   flex-direction: column;
   gap: 20px 0;
@@ -526,35 +583,74 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
-.manager_view .main_block .user_list-mobile .user_list .card .card_footer,
-.users .main_block .user_list-mobile .user_list .card .card_footer,
-.media .main_block .user_list-mobile .user_list .card .card_footer,
-.offering .main_block .user_list-mobile .user_list .card .card_footer,
-.balance .main_block .user_list-mobile .user_list .card .card_footer,
-.support .main_block .user_list-mobile .user_list .card .card_footer,
-.profile_view .main_block .user_list-mobile .user_list .card .card_footer {
+.manager_view .main_block .user_list-mobile .card .card_footer,
+.manager_view .main_block .media_list-mobile .card .card_footer,
+.users .main_block .user_list-mobile .card .card_footer,
+.users .main_block .media_list-mobile .card .card_footer,
+.media .main_block .user_list-mobile .card .card_footer,
+.media .main_block .media_list-mobile .card .card_footer,
+.offering .main_block .user_list-mobile .card .card_footer,
+.offering .main_block .media_list-mobile .card .card_footer,
+.balance .main_block .user_list-mobile .card .card_footer,
+.balance .main_block .media_list-mobile .card .card_footer,
+.support .main_block .user_list-mobile .card .card_footer,
+.support .main_block .media_list-mobile .card .card_footer,
+.profile_view .main_block .user_list-mobile .card .card_footer,
+.profile_view .main_block .media_list-mobile .card .card_footer {
   color: #fff;
 }
 
-.manager_view .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn,
-.users .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn,
-.media .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn,
-.offering .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn,
-.balance .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn,
-.support .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn,
-.profile_view .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn {
+.manager_view .main_block .user_list-mobile .card .card_footer p,
+.manager_view .main_block .media_list-mobile .card .card_footer p,
+.users .main_block .user_list-mobile .card .card_footer p,
+.users .main_block .media_list-mobile .card .card_footer p,
+.media .main_block .user_list-mobile .card .card_footer p,
+.media .main_block .media_list-mobile .card .card_footer p,
+.offering .main_block .user_list-mobile .card .card_footer p,
+.offering .main_block .media_list-mobile .card .card_footer p,
+.balance .main_block .user_list-mobile .card .card_footer p,
+.balance .main_block .media_list-mobile .card .card_footer p,
+.support .main_block .user_list-mobile .card .card_footer p,
+.support .main_block .media_list-mobile .card .card_footer p,
+.profile_view .main_block .user_list-mobile .card .card_footer p,
+.profile_view .main_block .media_list-mobile .card .card_footer p {
+  font-size: 20px;
+}
+
+.manager_view .main_block .user_list-mobile .card .card_footer .card_footer-btn,
+.manager_view .main_block .media_list-mobile .card .card_footer .card_footer-btn,
+.users .main_block .user_list-mobile .card .card_footer .card_footer-btn,
+.users .main_block .media_list-mobile .card .card_footer .card_footer-btn,
+.media .main_block .user_list-mobile .card .card_footer .card_footer-btn,
+.media .main_block .media_list-mobile .card .card_footer .card_footer-btn,
+.offering .main_block .user_list-mobile .card .card_footer .card_footer-btn,
+.offering .main_block .media_list-mobile .card .card_footer .card_footer-btn,
+.balance .main_block .user_list-mobile .card .card_footer .card_footer-btn,
+.balance .main_block .media_list-mobile .card .card_footer .card_footer-btn,
+.support .main_block .user_list-mobile .card .card_footer .card_footer-btn,
+.support .main_block .media_list-mobile .card .card_footer .card_footer-btn,
+.profile_view .main_block .user_list-mobile .card .card_footer .card_footer-btn,
+.profile_view .main_block .media_list-mobile .card .card_footer .card_footer-btn {
   display: flex;
   align-items: center;
   gap: 0 14px;
+  margin-top: 10px;
 }
 
-.manager_view .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2,
-.users .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2,
-.media .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2,
-.offering .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2,
-.balance .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2,
-.support .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2,
-.profile_view .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .btn_2 {
+.manager_view .main_block .user_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.manager_view .main_block .media_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.users .main_block .user_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.users .main_block .media_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.media .main_block .user_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.media .main_block .media_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.offering .main_block .user_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.offering .main_block .media_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.balance .main_block .user_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.balance .main_block .media_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.support .main_block .user_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.support .main_block .media_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.profile_view .main_block .user_list-mobile .card .card_footer .card_footer-btn .btn_2,
+.profile_view .main_block .media_list-mobile .card .card_footer .card_footer-btn .btn_2 {
   background: #181a1e;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
   border-radius: 31px;
@@ -564,13 +660,20 @@ body {
   padding: 12px 20px;
 }
 
-.manager_view .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active,
-.users .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active,
-.media .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active,
-.offering .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active,
-.balance .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active,
-.support .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active,
-.profile_view .main_block .user_list-mobile .user_list .card .card_footer .card_footer-btn .active {
+.manager_view .main_block .user_list-mobile .card .card_footer .card_footer-btn .active,
+.manager_view .main_block .media_list-mobile .card .card_footer .card_footer-btn .active,
+.users .main_block .user_list-mobile .card .card_footer .card_footer-btn .active,
+.users .main_block .media_list-mobile .card .card_footer .card_footer-btn .active,
+.media .main_block .user_list-mobile .card .card_footer .card_footer-btn .active,
+.media .main_block .media_list-mobile .card .card_footer .card_footer-btn .active,
+.offering .main_block .user_list-mobile .card .card_footer .card_footer-btn .active,
+.offering .main_block .media_list-mobile .card .card_footer .card_footer-btn .active,
+.balance .main_block .user_list-mobile .card .card_footer .card_footer-btn .active,
+.balance .main_block .media_list-mobile .card .card_footer .card_footer-btn .active,
+.support .main_block .user_list-mobile .card .card_footer .card_footer-btn .active,
+.support .main_block .media_list-mobile .card .card_footer .card_footer-btn .active,
+.profile_view .main_block .user_list-mobile .card .card_footer .card_footer-btn .active,
+.profile_view .main_block .media_list-mobile .card .card_footer .card_footer-btn .active {
   background: #3334ff;
 }
 

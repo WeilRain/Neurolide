@@ -80,7 +80,7 @@
 .media .main_block .media_list-head .list-head-other {
   display: flex;
   align-items: center;
-  gap: 0 75px;
+  gap: 0 65px;
   color: #fff;
   font-size: 20px;
 }
@@ -179,10 +179,6 @@
 
 .media .main_block .media_list .media_list-item .two_items p {
   font-size: 16px;
-}
-
-.media .main_block .media_list .media_list-item .link {
-  margin-left: -110px;
 }
 
 .media .main_block .media_list .media_list-item .link p {

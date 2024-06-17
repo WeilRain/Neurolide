@@ -78,7 +78,7 @@
             .list-head-other {
                 display: flex;
                 align-items: center;
-                gap: 0 75px;
+                gap: 0 65px;
                 color: #fff;
                 font-size: 20px;
                 .other_item {
@@ -176,7 +176,7 @@
                     }
                 }
                 .link {
-                    margin-left: -110px;
+                    // margin-left: -110px;
                     & p {
                         font-size: 20px;
                     }
