@@ -14,8 +14,180 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
+.balance .main_block .payment_method-mobile .payment_method-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-header p {
+  display: flex;
+  align-content: center;
+  gap: 0 10px;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-cards {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-cards .card {
+  background: url(../img/card_backgroud.png);
+  margin: 0 auto;
+  width: 382px;
+  height: 218px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  padding: 0 20px;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-cards .card .card_header {
+  display: flex;
+  align-items: center;
+  gap: 0 111px;
+  margin-bottom: 60px;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-cards .card .card_header .card_balance p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-cards .card .card_header .card_balance p span {
+  opacity: 60%;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-cards .card .card_main {
+  display: flex;
+  align-items: center;
+  gap: 0 38px;
+  margin-bottom: 24px;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-cards .card .card_main .card_number {
+  font-size: 24px;
+  gap: 0 6px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-cards .card .card_main .card_date {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px 0;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-cards .card .card_main .card_date span {
+  font-size: 12px;
+  opacity: 60%;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-cards .card .card_main .card_date p {
+  font-size: 14px;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-cards .card .card_footer {
+  display: flex;
+  align-items: flex-start;
+  color: #fff;
+  gap: 0 200px;
+  font-size: 14px;
+}
+
+.balance .main_block .payment_method-mobile .payment_method-cards .add_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #181a1e;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  width: 218px;
+  height: 218px;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.balance .main_block .private_balance-mobile {
+  display: flex;
+  flex-direction: column;
+  margin: 0 12px;
+}
+
+.balance .main_block .private_balance-mobile .btn_balance {
+  background: #0e1218;
+  color: #ffff;
+  margin: 19px 0 11px 0;
+  align-self: flex-start;
+}
+
+.balance .main_block .private_balance-mobile .btn_3 {
+  outline: none;
+  border: none;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 18px 10px 18px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.balance .main_block .private_balance-mobile .private_balance-btn {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+  margin: 30px 0;
+}
+
+.balance .main_block .private_balance-mobile .private_balance-btn .btn_refill {
+  color: #fff;
+  background: #423efc;
+}
+
+.balance .main_block .private_balance-mobile .private_balance-btn .btn_withdraw {
+  color: #fff;
+  background: #423efc;
+}
+
+.balance .main_block .private_balance-mobile .card_balance {
+  width: 100%;
+  height: 218px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  border-radius: 20px;
+  background: #0e1218;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.balance .main_block .private_balance-mobile .card_balance span {
+  color: #434343;
+  font-size: 24px;
+  margin-top: 28px;
+  padding-left: 28px;
+}
+
+.balance .main_block .private_balance-mobile .card_balance p {
+  font-size: 48px;
+  margin-top: 66px;
+  padding-left: 28px;
+}
+
 .balance .main_block .payment_method {
-  margin: 30px 0 0 180px;
+  margin: 30px 0 0 18%;
 }
 
 .balance .main_block .payment_method .btn_method {
@@ -39,7 +211,7 @@ body {
 
 .balance .main_block .payment_method .payment_method-cards .card {
   background: url(../img/card_backgroud.png);
-  width: 382px;
+  min-width: 382px;
   height: 218px;
   display: flex;
   flex-direction: column;
@@ -118,10 +290,11 @@ body {
   height: 218px;
   color: #fff;
   border-radius: 20px;
+  text-align: center;
 }
 
 .balance .main_block .private_balance {
-  margin-left: 180px;
+  margin-left: 18%;
 }
 
 .balance .main_block .private_balance .private_balance-btn {
@@ -180,9 +353,101 @@ body {
   padding-left: 28px;
 }
 
+.balance .main_block .history_payment-mobile {
+  margin: 0 10px 50px 10px;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-btn {
+  margin-bottom: 30px;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-btn .btn_4 {
+  background: #0e1218;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: none;
+  padding: 15px 20px 15px 20px;
+  outline: none;
+  font-family: "Public Sans", sans-serif;
+  color: #fff;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-list .card {
+  display: flex;
+  flex-direction: column;
+  background: #0e1218;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 615px;
+  padding: 20px;
+  width: 100%;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-list .card .card_head {
+  color: #fff;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-list .card .card_head .head_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-list .card .card_head .status_travel {
+  border-radius: 20px;
+  background: #d8e1ff;
+  color: #2e65f3;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-list .card .card_head .status_succes {
+  border-radius: 20px;
+  color: #0faf62;
+  background: #dde4ba;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-list .card .card_body .card_body-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-list .card .card_footer {
+  color: #fff;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-list .card .card_footer p {
+  font-size: 20px;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-list .card .card_footer .card_footer-btn {
+  display: flex;
+  align-items: center;
+  gap: 0 14px;
+  margin-top: 10px;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-list .card .card_footer .card_footer-btn .btn_2 {
+  background: #181a1e;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 31px;
+  outline: none;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+}
+
+.balance .main_block .history_payment-mobile .history_payment-list .card .card_footer .card_footer-btn .active {
+  background: #3334ff;
+}
+
 .balance .main_block .history_payment {
-  margin-left: 180px;
-  margin: 50px 0 0 180px;
+  margin: 50px 0 0 18%;
   max-width: 1205px;
   color: #ffff;
 }

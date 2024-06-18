@@ -15,8 +15,165 @@ body {
 }
 .balance {
     .main_block {
+        .payment_method-mobile {
+            .payment_method-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px;
+                p {
+                    display: flex;
+                    align-content: center;
+                    gap: 0 10px;
+                    color: #ffff;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+            .payment_method-cards {
+                display: flex;
+                align-items: center;
+                gap: 0 30px;
+                .card {
+                    background: url(../img/card_backgroud.png);
+                    margin: 0 auto;
+
+                    width: 382px;
+                    height: 218px;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 20px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: top;
+                    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+                    padding: 0 20px;
+                    .card_header {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 111px;
+                        margin-bottom: 60px;
+                        .card_balance {
+                            & p {
+                                color: #fff;
+                                font-size: 18px;
+                                & span {
+                                    opacity: 60%;
+                                }
+                            }
+                        }
+                    }
+                    .card_main {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 38px;
+                        margin-bottom: 24px;
+                        .card_number {
+                            font-size: 24px;
+                            gap: 0 6px;
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .card_date {
+                            color: #fff;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 4px 0;
+                            & span {
+                                font-size: 12px;
+                                opacity: 60%;
+                            }
+                            & p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .card_footer {
+                        display: flex;
+                        align-items: flex-start;
+                        color: #fff;
+                        gap: 0 200px;
+                        font-size: 14px;
+                    }
+                }
+                .add_card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background: #181a1e;
+                    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+                    width: 218px;
+                    height: 218px;
+                    color: #fff;
+                    border-radius: 20px;
+                    text-align: center;
+                }
+            }
+        }
+        .private_balance-mobile {
+            display: flex;
+            flex-direction: column;
+            margin: 0 12px;
+            .btn_balance {
+                background: #0e1218;
+                color: #ffff;
+                margin: 19px 0 11px 0;
+                align-self: flex-start;
+            }
+            .btn_3 {
+                outline: none;
+                border: none;
+                font-size: 20px;
+                border-radius: 20px;
+                padding: 10px 18px 10px 18px;
+                box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            }
+            .private_balance-btn {
+                display: flex;
+                align-items: center;
+                gap: 0 30px;
+                margin: 30px 0;
+
+                .btn_refill {
+                    color: #fff;
+                    background: #423efc;
+                }
+                .btn_withdraw {
+                    color: #fff;
+                    background: #423efc;
+                }
+            }
+            .card_balance {
+                width: 100%;
+                height: 218px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                color: #fff;
+                border-radius: 20px;
+                background: #0e1218;
+                box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+                & span {
+                    color: rgba(67, 67, 67, 1);
+                    font-size: 24px;
+                    margin-top: 28px;
+                    padding-left: 28px;
+                }
+
+                & p {
+                    font-size: 48px;
+                    margin-top: 66px;
+                    padding-left: 28px;
+                }
+            }
+        }
         .payment_method {
-            margin: 30px 0 0 180px;
+            margin: 30px 0 0 18%;
 
             .btn_method {
                 outline: none;
@@ -37,7 +194,7 @@ body {
                 gap: 0 30px;
                 .card {
                     background: url(../img/card_backgroud.png);
-                    width: 382px;
+                    min-width: 382px;
                     height: 218px;
                     display: flex;
                     flex-direction: column;
@@ -109,11 +266,12 @@ body {
                     height: 218px;
                     color: #fff;
                     border-radius: 20px;
+                    text-align: center;
                 }
             }
         }
         .private_balance {
-            margin-left: 180px;
+            margin-left: 18%;
             .private_balance-btn {
                 display: flex;
                 align-items: center;
@@ -164,9 +322,92 @@ body {
                 }
             }
         }
+        .history_payment-mobile {
+            margin: 0 10px 50px 10px;
+            .history_payment-btn {
+                margin-bottom: 30px;
+                .btn_4 {
+                    background: #0e1218;
+                    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+                    border-radius: 20px;
+                    border: none;
+                    padding: 15px 20px 15px 20px;
+                    outline: none;
+                    font-family: "Public Sans", sans-serif;
+                    color: #fff;
+                }
+            }
+            .history_payment-list {
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    background: rgba(14, 18, 24, 1);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+                    border-radius: 20px;
+                    max-width: 615px;
+                    padding: 20px;
+                    width: 100%;
+                    .card_head {
+                        color: #fff;
+                        .head_item {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+
+                        .status_travel {
+                            border-radius: 20px;
+                            background: rgba(216, 225, 255, 1);
+                            color: rgba(46, 101, 243, 1);
+                            padding: 5px 20px 5px 20px;
+                            text-align: center;
+                        }
+                        .status_succes {
+                            border-radius: 20px;
+                            color: rgba(15, 175, 98, 1);
+                            background: rgba(221, 228, 186, 1);
+                            padding: 5px 20px 5px 20px;
+                            text-align: center;
+                        }
+                    }
+                    .card_body {
+                        .card_body-list {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px 0;
+                            color: #fff;
+                            font-family: "DM Sans", sans-serif;
+                        }
+                    }
+                    .card_footer {
+                        color: #fff;
+                        & p {
+                            font-size: 20px;
+                        }
+                        .card_footer-btn {
+                            display: flex;
+                            align-items: center;
+                            gap: 0 14px;
+                            margin-top: 10px;
+                            .btn_2 {
+                                background: rgba(24, 26, 30, 1);
+                                box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+                                border-radius: 31px;
+                                outline: none;
+                                color: #fff;
+                                border: none;
+                                padding: 12px 20px;
+                            }
+                            .active {
+                                background: rgba(51, 52, 255, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .history_payment {
-            margin-left: 180px;
-            margin: 50px 0 0 180px;
+            margin: 50px 0 0 18%;
             max-width: 1205px;
             color: #ffff;
             & p {

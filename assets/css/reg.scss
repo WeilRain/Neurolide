@@ -213,6 +213,11 @@ body {
                 font-size: 100px;
                 font-weight: 400;
                 color: #fff;
+                font-size: clamp(42px, 6vw, 100px);
+                font-weight: 400;
+            }
+            img {
+                width: clamp(90px, 15vw, 300px);
             }
         }
     }

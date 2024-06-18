@@ -1,6 +1,17 @@
 * {
     margin: 0;
 }
+@media screen and (max-width: 1500px) {
+    .balance {
+        .main_block {
+            .payment_method,
+            .private_balance,
+            .history_payment {
+                margin-left: 40px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1280px) {
     .manager_view,
     .users,
@@ -52,9 +63,37 @@
             }
         }
     }
+    .auth,
+    .reg {
+        flex-direction: column-reverse;
+        .auth_block,
+        .reg_block {
+            margin-top: 21px;
+            margin-left: 24px;
+        }
+        .auth_logo,
+        .reg_logo {
+            justify-content: start;
+            padding-left: 90px;
+            .logo {
+                align-items: center;
+                gap: 0 33px;
+                flex-direction: row;
+                & h1 {
+                    margin-top: 0;
+                }
+            }
+            .auth_backgorund,
+            .reg_backgorund {
+                height: 331px;
+                z-index: -1;
+            }
+        }
+    }
 }
 @media screen and (max-width: 1110px) {
     .manager_view,
+    .profile_view,
     .media {
         .main_block {
             .media_head,
@@ -62,7 +101,7 @@
             .media_list {
                 display: none;
             }
-            .media_list-mobile{
+            .media_list-mobile {
                 display: block;
             }
             .user {
@@ -77,7 +116,7 @@
         }
     }
 }
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 97px) {
     .manager_view,
     .users,
     .media,
@@ -103,6 +142,86 @@
             .users_list,
             .users_list-head {
                 display: none;
+            }
+            .payment_method,
+            .private_balance,
+            .history_payment {
+                display: none;
+            }
+        }
+        .user_background {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 590px) {
+    .manager_view,
+    .users,
+    .media,
+    .offering,
+    .balance,
+    .support,
+    .profile_view {
+        .main_block {
+            .user {
+                margin-left: 10px;
+                .user_info {
+                    .user_avatar {
+                        width: 61px;
+                        margin-left: 20px;
+                        height: 61px;
+                    }
+                    .user_btn {
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .payment_method-mobile {
+                .payment_method-cards {
+                    .card {
+                        width: 288px;
+                        height: 184px;
+                        .card_header {
+                            margin-bottom: 44px;
+                            padding-top: 10px;
+                        }
+                        .card_main {
+                            margin-bottom: 10px;
+                        }
+                        .card_footer {
+                            gap: unset;
+                            justify-content: space-between;
+                            padding-bottom: 10px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .manager_view,
+    .users,
+    .media,
+    .offering,
+    .balance,
+    .support,
+    .profile_view {
+        .main_block {
+            .user {
+                margin: 0 5px;
+                .user_info {
+                    .user_info-list {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        .user_avatar {
+                            margin: 0 0 20px 0;
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+                }
             }
         }
     }

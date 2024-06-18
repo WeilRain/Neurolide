@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/managerpage.css">
     <link rel="stylesheet" href="assets/css/profile.css">
     <link rel="stylesheet" href="assets/css/response.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
     <title>Neurolide | Профіль</title>
 </head>
@@ -60,8 +61,11 @@
         </div>
         <div id="mySidenav" class="sidenav">
             <div class="aside_nav-lsit">
+                <a href="mobilemain.html">
+                    <li class="list_item"><img src="assets/img/manager_icon.png" alt=""> Головна</li>
+                </a>
                 <a href="manager.html">
-                    <li class="list_item active"><img src="assets/img/manager_icon.png" alt=""> Менеджер</li>
+                    <li class="list_item"><img src="assets/img/manager_icon.png" alt=""> Менеджер</li>
                 </a>
                 <a href="users.html">
                     <li class="list_item "><img src="assets/img/users_icon.png" alt=""> Користувачі</li>
@@ -73,7 +77,7 @@
                     <li class="list_item"><img src="assets/img/media_icon.png" alt=""> Офери</li>
                 </a>
                 <a href="profile.html">
-                    <li class="list_item"><img src="assets/img/profile.png" alt=""> Профіль</li>
+                    <li class="list_item  active"><img src="assets/img/profile.png" alt=""> Профіль</li>
                 </a>
                 <a href="balance.html">
                     <li class="list_item"><img src="assets/img/balance.png" alt=""> Баланс</li>
@@ -106,23 +110,26 @@
             <div class="user">
                 <div class="user_info">
                     <div class="user_info-list">
-                        <div class="list_item">
-                            <p>Name:</p> <span>Mariia</span>
+                        <div class="list">
+                            <div class="list_item">
+                                <p>Name:</p> <span>Mariia</span>
+                            </div>
+                            <div class="list_item">
+                                <p>Surname:</p> <span>Skorobohata</span>
+                            </div>
+                            <div class="list_item">
+                                <p>Tel num:</p> <span>+380 123 45 67</span>
+                            </div>
+                            <div class="list_item">
+                                <p>Email:</p> <span>mariia123@email.com</span>
+                            </div>
+                            <div class="list_item">
+                                <p>Password:</p> <span>*******</span>
+                            </div>
                         </div>
-                        <div class="list_item">
-                            <p>Surname:</p> <span>Skorobohata</span>
-                        </div>
-                        <div class="list_item">
-                            <p>Tel num:</p> <span>+380 123 45 67</span>
-                        </div>
-                        <div class="list_item">
-                            <p>Email:</p> <span>mariia123@email.com</span>
-                        </div>
-                        <div class="list_item">
-                            <p>Password:</p> <span>*******</span>
-                        </div>
+                        <img class="user_avatar" src="assets/img/Avatar.png" alt="">
                     </div>
-                    <img class="user_avatar" src="assets/img/Avatar.png" alt="">
+
                     <div class="user_btn">
                         <button class="btn_1">Редагувати</button><button class="btn_1">Видалити</button><button
                             class="btn_1">Вихід</button>
@@ -142,6 +149,299 @@
                         <p>212</p>
                     </div>
                 </div>
+            </div>
+            <div class="user_list-mobile">
+                <div class="user_list-header">
+                    <div class="offer_btn">
+                        Медіа канали
+                    </div>
+                    <img src="assets/img/offersadd_icon.png" alt="">
+                </div>
+                <div class="user_list">
+                    <section class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>Статус</p>
+
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div clas="list_item">
+                                                <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Кріейтори</span>
+                                                <p>Ком’юніті українських АІ-крінйторів</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Підписники</span>
+                                                <p>20 989</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Перегляди</span>
+                                                <p>9 897</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Ціна</span>
+                                                <p>32 700 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+
+                                            <button class="btn_2 active">CPH</button><button class="btn_2">CPM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>Статус</p>
+
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div clas="list_item">
+                                                <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Кріейтори</span>
+                                                <p>Ком’юніті українських АІ-крінйторів</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Підписники</span>
+                                                <p>20 989</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Перегляди</span>
+                                                <p>9 897</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Ціна</span>
+                                                <p>32 700 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+
+                                            <button class="btn_2 active">CPH</button><button class="btn_2">CPM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>Статус</p>
+
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div clas="list_item">
+                                                <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Кріейтори</span>
+                                                <p>Ком’юніті українських АІ-крінйторів</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Підписники</span>
+                                                <p>20 989</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Перегляди</span>
+                                                <p>9 897</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Ціна</span>
+                                                <p>32 700 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+
+                                            <button class="btn_2 active">CPH</button><button class="btn_2">CPM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>Статус</p>
+
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div clas="list_item">
+                                                <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Кріейтори</span>
+                                                <p>Ком’юніті українських АІ-крінйторів</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Підписники</span>
+                                                <p>20 989</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Перегляди</span>
+                                                <p>9 897</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Ціна</span>
+                                                <p>32 700 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+
+                                            <button class="btn_2 active">CPH</button><button class="btn_2">CPM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>Статус</p>
+
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div clas="list_item">
+                                                <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Кріейтори</span>
+                                                <p>Ком’юніті українських АІ-крінйторів</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Підписники</span>
+                                                <p>20 989</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Перегляди</span>
+                                                <p>9 897</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Ціна</span>
+                                                <p>32 700 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+
+                                            <button class="btn_2 active">CPH</button><button class="btn_2">CPM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card splide__slide">
+                                    <div class="card_head">
+                                        <div class="head_item">
+                                            <p>Статус</p>
+
+                                            <div class="setting_item">
+                                                <img src="assets/img/whitedelete.png" alt=""><img
+                                                    src="assets/img/whitesetting.png" onclick="openModal()" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_body">
+                                        <div class="card_body-list">
+                                            <div clas="list_item">
+                                                <img class="uid_img" src="assets/img/mediaavatar_icon.png" alt="">
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Кріейтори</span>
+                                                <p>Ком’юніті українських АІ-крінйторів</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Посилання</span>
+                                                <p>wordwall.net</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Підписники</span>
+                                                <p>20 989</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Перегляди</span>
+                                                <p>9 897</p>
+                                            </div>
+                                            <div class="list_item">
+                                                <span>Ціна</span>
+                                                <p>32 700 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_footer">
+                                        <p>Payout</p>
+                                        <div class="card_footer-btn">
+
+                                            <button class="btn_2 active">CPH</button><button class="btn_2">CPM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
             </div>
             <div class="users_list">
                 <div class="users_list-head">
@@ -449,6 +749,20 @@
     </section>
     <!-- script -->
     <script src="assets/js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+                arrows: false,
+                width: '100%',
+                gap: '20px',
+                focus: 'center',
+                padding: '2rem',
+                pagination: false,
+
+            }).mount();
+        });
+    </script>
 </body>
 
 </html>

@@ -24,7 +24,7 @@ body {
   margin-left: 41px;
   display: grid;
   gap: 50px 100px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(685px, 1fr));
 }
 
 .support .main_block .support_list .card {
@@ -40,13 +40,13 @@ body {
 }
 
 .support .main_block .support_list .card .card_info h4 {
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
   white-space: pre-line;
   color: #fff;
 }
 
 .support .main_block .support_list .card .card_info p {
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px);
   color: #fff;
   white-space: pre-line;
 }

@@ -562,6 +562,25 @@ body {
   justify-content: space-between;
 }
 
+.manager_view .main_block .user_list-mobile .card .card_head .setting_item,
+.manager_view .main_block .media_list-mobile .card .card_head .setting_item,
+.users .main_block .user_list-mobile .card .card_head .setting_item,
+.users .main_block .media_list-mobile .card .card_head .setting_item,
+.media .main_block .user_list-mobile .card .card_head .setting_item,
+.media .main_block .media_list-mobile .card .card_head .setting_item,
+.offering .main_block .user_list-mobile .card .card_head .setting_item,
+.offering .main_block .media_list-mobile .card .card_head .setting_item,
+.balance .main_block .user_list-mobile .card .card_head .setting_item,
+.balance .main_block .media_list-mobile .card .card_head .setting_item,
+.support .main_block .user_list-mobile .card .card_head .setting_item,
+.support .main_block .media_list-mobile .card .card_head .setting_item,
+.profile_view .main_block .user_list-mobile .card .card_head .setting_item,
+.profile_view .main_block .media_list-mobile .card .card_head .setting_item {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+
 .manager_view .main_block .user_list-mobile .card .card_body .card_body-list,
 .manager_view .main_block .media_list-mobile .card .card_body .card_body-list,
 .users .main_block .user_list-mobile .card .card_body .card_body-list,
@@ -699,8 +718,6 @@ body {
   background: #0e1218;
   max-width: 628px;
   border-radius: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .manager_view .main_block .user .user_info .user_info-list,
@@ -711,10 +728,19 @@ body {
 .support .main_block .user .user_info .user_info-list,
 .profile_view .main_block .user .user_info .user_info-list {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 14px 0;
   padding: 45px 0 44px 30px;
+}
+
+.manager_view .main_block .user .user_info .user_info-list .list,
+.users .main_block .user .user_info .user_info-list .list,
+.media .main_block .user .user_info .user_info-list .list,
+.offering .main_block .user .user_info .user_info-list .list,
+.balance .main_block .user .user_info .user_info-list .list,
+.support .main_block .user .user_info .user_info-list .list,
+.profile_view .main_block .user .user_info .user_info-list .list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px 0;
 }
 
 .manager_view .main_block .user .user_info .user_info-list .list_item,
@@ -725,7 +751,7 @@ body {
 .support .main_block .user .user_info .user_info-list .list_item,
 .profile_view .main_block .user .user_info .user_info-list .list_item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   color: #fff;
   gap: 0 26px;
 }
@@ -744,7 +770,7 @@ body {
 .support .main_block .user .user_info .user_info-list .list_item span,
 .profile_view .main_block .user .user_info .user_info-list .list_item p,
 .profile_view .main_block .user .user_info .user_info-list .list_item span {
-  font-size: 24px;
+  font-size: clamp(18px, 2vw, 24px);
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
 }
@@ -756,7 +782,7 @@ body {
 .balance .main_block .user .user_info .user_avatar,
 .support .main_block .user .user_info .user_avatar,
 .profile_view .main_block .user .user_info .user_avatar {
-  padding: 35px 0 0 70px;
+  margin: 0 10px 0 70px;
   width: 138px;
   height: 138px;
 }
@@ -770,7 +796,8 @@ body {
 .profile_view .main_block .user .user_info .user_btn {
   display: flex;
   align-items: center;
-  gap: 0 20px;
+  flex-wrap: wrap;
+  gap: 10px 20px;
   padding: 0 0 52px 27px;
 }
 

@@ -2,6 +2,14 @@
   margin: 0;
 }
 
+@media screen and (max-width: 1500px) {
+  .balance .main_block .payment_method,
+  .balance .main_block .private_balance,
+  .balance .main_block .history_payment {
+    margin-left: 40px;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .manager_view,
   .users,
@@ -88,36 +96,86 @@
   .profile_view .main_block .header_nav {
     display: none;
   }
+  .auth,
+  .reg {
+    flex-direction: column-reverse;
+  }
+  .auth .auth_block,
+  .auth .reg_block,
+  .reg .auth_block,
+  .reg .reg_block {
+    margin-top: 21px;
+    margin-left: 24px;
+  }
+  .auth .auth_logo,
+  .auth .reg_logo,
+  .reg .auth_logo,
+  .reg .reg_logo {
+    justify-content: start;
+    padding-left: 90px;
+  }
+  .auth .auth_logo .logo,
+  .auth .reg_logo .logo,
+  .reg .auth_logo .logo,
+  .reg .reg_logo .logo {
+    align-items: center;
+    gap: 0 33px;
+    flex-direction: row;
+  }
+  .auth .auth_logo .logo h1,
+  .auth .reg_logo .logo h1,
+  .reg .auth_logo .logo h1,
+  .reg .reg_logo .logo h1 {
+    margin-top: 0;
+  }
+  .auth .auth_logo .auth_backgorund,
+  .auth .auth_logo .reg_backgorund,
+  .auth .reg_logo .auth_backgorund,
+  .auth .reg_logo .reg_backgorund,
+  .reg .auth_logo .auth_backgorund,
+  .reg .auth_logo .reg_backgorund,
+  .reg .reg_logo .auth_backgorund,
+  .reg .reg_logo .reg_backgorund {
+    height: 331px;
+    z-index: -1;
+  }
 }
 
 @media screen and (max-width: 1110px) {
   .manager_view .main_block .media_head,
   .manager_view .main_block .media_list-head,
   .manager_view .main_block .media_list,
+  .profile_view .main_block .media_head,
+  .profile_view .main_block .media_list-head,
+  .profile_view .main_block .media_list,
   .media .main_block .media_head,
   .media .main_block .media_list-head,
   .media .main_block .media_list {
     display: none;
   }
   .manager_view .main_block .media_list-mobile,
+  .profile_view .main_block .media_list-mobile,
   .media .main_block .media_list-mobile {
     display: block;
   }
   .manager_view .main_block .user,
+  .profile_view .main_block .user,
   .media .main_block .user {
     justify-content: center;
   }
   .manager_view .main_block .user .user_info,
+  .profile_view .main_block .user .user_info,
   .media .main_block .user .user_info {
     max-width: 100%;
   }
   .manager_view .main_block .user .user_static,
+  .profile_view .main_block .user .user_static,
   .media .main_block .user .user_static {
     display: none;
   }
 }
 
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 97px) {
   .manager_view .name_page,
   .users .name_page,
   .media .name_page,
@@ -171,5 +229,143 @@
   .profile_view .main_block .users_list,
   .profile_view .main_block .users_list-head {
     display: none;
+  }
+  .manager_view .main_block .payment_method,
+  .manager_view .main_block .private_balance,
+  .manager_view .main_block .history_payment,
+  .users .main_block .payment_method,
+  .users .main_block .private_balance,
+  .users .main_block .history_payment,
+  .media .main_block .payment_method,
+  .media .main_block .private_balance,
+  .media .main_block .history_payment,
+  .offering .main_block .payment_method,
+  .offering .main_block .private_balance,
+  .offering .main_block .history_payment,
+  .balance .main_block .payment_method,
+  .balance .main_block .private_balance,
+  .balance .main_block .history_payment,
+  .support .main_block .payment_method,
+  .support .main_block .private_balance,
+  .support .main_block .history_payment,
+  .profile_view .main_block .payment_method,
+  .profile_view .main_block .private_balance,
+  .profile_view .main_block .history_payment {
+    display: none;
+  }
+  .manager_view .user_background,
+  .users .user_background,
+  .media .user_background,
+  .offering .user_background,
+  .balance .user_background,
+  .support .user_background,
+  .profile_view .user_background {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .manager_view .main_block .user,
+  .users .main_block .user,
+  .media .main_block .user,
+  .offering .main_block .user,
+  .balance .main_block .user,
+  .support .main_block .user,
+  .profile_view .main_block .user {
+    margin-left: 10px;
+  }
+  .manager_view .main_block .user .user_info .user_avatar,
+  .users .main_block .user .user_info .user_avatar,
+  .media .main_block .user .user_info .user_avatar,
+  .offering .main_block .user .user_info .user_avatar,
+  .balance .main_block .user .user_info .user_avatar,
+  .support .main_block .user .user_info .user_avatar,
+  .profile_view .main_block .user .user_info .user_avatar {
+    width: 61px;
+    margin-left: 20px;
+    height: 61px;
+  }
+  .manager_view .main_block .user .user_info .user_btn,
+  .users .main_block .user .user_info .user_btn,
+  .media .main_block .user .user_info .user_btn,
+  .offering .main_block .user .user_info .user_btn,
+  .balance .main_block .user .user_info .user_btn,
+  .support .main_block .user .user_info .user_btn,
+  .profile_view .main_block .user .user_info .user_btn {
+    margin-right: 15px;
+  }
+  .manager_view .main_block .payment_method-mobile .payment_method-cards .card,
+  .users .main_block .payment_method-mobile .payment_method-cards .card,
+  .media .main_block .payment_method-mobile .payment_method-cards .card,
+  .offering .main_block .payment_method-mobile .payment_method-cards .card,
+  .balance .main_block .payment_method-mobile .payment_method-cards .card,
+  .support .main_block .payment_method-mobile .payment_method-cards .card,
+  .profile_view .main_block .payment_method-mobile .payment_method-cards .card {
+    width: 288px;
+    height: 184px;
+  }
+  .manager_view .main_block .payment_method-mobile .payment_method-cards .card .card_header,
+  .users .main_block .payment_method-mobile .payment_method-cards .card .card_header,
+  .media .main_block .payment_method-mobile .payment_method-cards .card .card_header,
+  .offering .main_block .payment_method-mobile .payment_method-cards .card .card_header,
+  .balance .main_block .payment_method-mobile .payment_method-cards .card .card_header,
+  .support .main_block .payment_method-mobile .payment_method-cards .card .card_header,
+  .profile_view .main_block .payment_method-mobile .payment_method-cards .card .card_header {
+    margin-bottom: 44px;
+    padding-top: 10px;
+  }
+  .manager_view .main_block .payment_method-mobile .payment_method-cards .card .card_main,
+  .users .main_block .payment_method-mobile .payment_method-cards .card .card_main,
+  .media .main_block .payment_method-mobile .payment_method-cards .card .card_main,
+  .offering .main_block .payment_method-mobile .payment_method-cards .card .card_main,
+  .balance .main_block .payment_method-mobile .payment_method-cards .card .card_main,
+  .support .main_block .payment_method-mobile .payment_method-cards .card .card_main,
+  .profile_view .main_block .payment_method-mobile .payment_method-cards .card .card_main {
+    margin-bottom: 10px;
+  }
+  .manager_view .main_block .payment_method-mobile .payment_method-cards .card .card_footer,
+  .users .main_block .payment_method-mobile .payment_method-cards .card .card_footer,
+  .media .main_block .payment_method-mobile .payment_method-cards .card .card_footer,
+  .offering .main_block .payment_method-mobile .payment_method-cards .card .card_footer,
+  .balance .main_block .payment_method-mobile .payment_method-cards .card .card_footer,
+  .support .main_block .payment_method-mobile .payment_method-cards .card .card_footer,
+  .profile_view .main_block .payment_method-mobile .payment_method-cards .card .card_footer {
+    gap: unset;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .manager_view .main_block .user,
+  .users .main_block .user,
+  .media .main_block .user,
+  .offering .main_block .user,
+  .balance .main_block .user,
+  .support .main_block .user,
+  .profile_view .main_block .user {
+    margin: 0 5px;
+  }
+  .manager_view .main_block .user .user_info .user_info-list,
+  .users .main_block .user .user_info .user_info-list,
+  .media .main_block .user .user_info .user_info-list,
+  .offering .main_block .user .user_info .user_info-list,
+  .balance .main_block .user .user_info .user_info-list,
+  .support .main_block .user .user_info .user_info-list,
+  .profile_view .main_block .user .user_info .user_info-list {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .manager_view .main_block .user .user_info .user_info-list .user_avatar,
+  .users .main_block .user .user_info .user_info-list .user_avatar,
+  .media .main_block .user .user_info .user_info-list .user_avatar,
+  .offering .main_block .user .user_info .user_info-list .user_avatar,
+  .balance .main_block .user .user_info .user_info-list .user_avatar,
+  .support .main_block .user .user_info .user_info-list .user_avatar,
+  .profile_view .main_block .user .user_info .user_info-list .user_avatar {
+    margin: 0 0 20px 0;
+    width: 100px;
+    height: 100px;
   }
 }

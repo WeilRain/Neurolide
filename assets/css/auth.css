@@ -232,7 +232,11 @@ body {
 
 .auth .auth_logo .logo h1 {
   margin-top: 60px;
-  font-size: 100px;
+  font-size: clamp(42px, 6vw, 100px);
   font-weight: 400;
   color: #fff;
+}
+
+.auth .auth_logo .logo img {
+  width: clamp(90px, 15vw, 300px);
 }
